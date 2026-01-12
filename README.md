@@ -1,16 +1,58 @@
-# React + Vite
+# Plumber Booking Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that allows users to book a plumber for home service complaints and raise product-related queries such as sanitary items, fittings, and pricing. The app is built with a clean UI, simple booking flow, and reliable backend APIs.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Website:** https://plumber-booking.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+### User Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Book a plumber for service complaints
+- Submit plumbing-related issues easily
+- Create queries to ask about product details and prices
+- Simple and user-friendly booking form
+- Mobile responsive design
+
+### Admin Features
+
+- View all plumber bookings
+- View and manage user queries
+- Secure admin authentication
+- Dashboard for tracking requests
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- React.js
+- Tailwind CSS
+- React Router
+- Axios
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+
+---
+
+## How It Works
+
+1. User visits the website
+2. User fills the plumber booking form for complaints
+3. User can also submit queries related to plumbing products
+4. Admin logs in to view and manage bookings and queries
+5. Admin responds or takes action based on the request
+
+---
+
+## Project Structure (Frontend)
