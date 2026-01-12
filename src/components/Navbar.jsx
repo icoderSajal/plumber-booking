@@ -15,7 +15,11 @@ const Navbar = () => {
           className="flex items-center gap-2"
           onClick={() => setMenuOpen(false)}
         >
-          <img src="/logo.png" alt="PipeMistri" className="h-9 w-auto" />
+          <img
+            src="/src/assets/logo.png"
+            alt="PipeMistri"
+            className="h-9 w-auto"
+          />
           <span className="text-lg font-bold text-blue-600 hidden sm:block">
             PipeMistri
           </span>

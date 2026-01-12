@@ -10,7 +10,7 @@ const Complaints = () => {
     const fetchComplaints = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/complaints/all",
+          "https://plumber-backend.onrender.com/api/complaints/all",
           { withCredentials: true }
         );
 

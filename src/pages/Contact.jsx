@@ -31,7 +31,7 @@ const Contact = () => {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        "http://localhost:5000/api/queries/create",
+        "https://plumber-backend.onrender.com/api/queries/create",
         formData
       );
 

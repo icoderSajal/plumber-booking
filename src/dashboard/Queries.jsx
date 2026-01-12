@@ -7,7 +7,9 @@ const Queries = () => {
 
   const fetchQueries = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/queries/all");
+      const { data } = await axios.get(
+        "https://plumber-backend.onrender.com/api/queries/all"
+      );
 
       if (data.success) {
         setQueries(data.queries);
