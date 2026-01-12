@@ -75,13 +75,13 @@ const Navbar = () => {
                 Contact
               </Link>
 
-              <Link
+              {/* <Link
                 to="/admin"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-blue-600"
               >
                 Dashboard
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
