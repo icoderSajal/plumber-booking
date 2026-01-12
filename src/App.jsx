@@ -11,7 +11,7 @@ import AddPlumber from "./dashboard/AddPlumber";
 import Complaints from "./dashboard/Complaints";
 import Queries from "./dashboard/Queries";
 import CategoryProducts from "./pages/CategoryProducts";
-
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book-plumber" element={<BookPlumber />} />
+        <Route path="*" element={<NotFound />} />
         {/* <Route path="/products" element={<ProductsByCategory />} /> */}
         {/* <Route path="/category/:category" element={<CategoryProducts />} /> */}
 
