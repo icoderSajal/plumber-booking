@@ -489,7 +489,7 @@ const CategoryProducts = () => {
 
       <section className="bg-gray-100 min-h-screen py-8">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-6 uppercase">
+          <h2 className="text-4xl font-bold mb-6 uppercase text-blue-600">
             {category.replace("-", " ")}
           </h2>
 
