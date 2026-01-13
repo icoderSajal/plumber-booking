@@ -26,7 +26,7 @@ const ceramicProducts = [
     id: 4,
     name: "Western Two Piece Seat",
     image: "/images/west1.jpg",
-    price: "₹5,200",
+    price: "₹3,500",
   },
   {
     id: 5,
