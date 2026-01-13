@@ -525,18 +525,14 @@ const ProductDetails = () => {
             <span className="text-gray-700 font-medium">{product.name}</span>
           </div>
 
-          {/* Card */}
-          <div
-            className="bg-white rounded-2xl shadow-lg p-6 md:p-8 grid md:grid-cols-2 gap-8
-                          animate-fadeIn"
-          >
+          {/* Product Card */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 grid md:grid-cols-2 gap-8">
             {/* Image */}
             <div className="flex items-center justify-center">
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full max-h-[360px] object-contain
-                           transition-transform duration-300 hover:scale-105"
+                className="w-full max-h-[360px] object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
 
@@ -554,8 +550,9 @@ const ProductDetails = () => {
                 <p className="text-2xl font-semibold text-blue-600 mt-4">
                   ₹{product.price}
                 </p>
-                <p className="text-2xl font-bold text-red-500 mt-4">
-                  {product.brand}
+
+                <p className="text-lg font-bold text-red-500 mt-2">
+                  Brand: {product.brand}
                 </p>
 
                 <p className="text-gray-600 mt-5 leading-relaxed">
@@ -563,14 +560,24 @@ const ProductDetails = () => {
                   residential and commercial use. Durable, reliable, and easy to
                   install.
                 </p>
+
+                {/* Wash Basin Note */}
+                {product.category === "washbasin" && (
+                  <div className="mt-4 rounded-lg bg-yellow-50 border border-yellow-200 p-4">
+                    <p className="text-sm text-yellow-800 leading-relaxed">
+                      Note: This product includes only the wash basin. Taps,
+                      bottle trap, waste coupling, and waste pipe are not
+                      included and must be purchased separately.
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Actions */}
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <a
                   href="tel:9205448629"
-                  className="flex-1 text-center bg-green-600 text-white py-3 rounded-lg
-                             hover:bg-green-700 transition transform hover:-translate-y-0.5"
+                  className="flex-1 text-center bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition"
                 >
                   Call to Order
                 </a>
@@ -579,8 +586,7 @@ const ProductDetails = () => {
                   href={`https://wa.me/919205448629?text=I am interested in ${product.name}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center border border-green-600 text-green-600 py-3 rounded-lg
-                             hover:bg-green-50 transition"
+                  className="flex-1 text-center border border-green-600 text-green-600 py-3 rounded-lg hover:bg-green-50 transition"
                 >
                   WhatsApp Inquiry
                 </a>

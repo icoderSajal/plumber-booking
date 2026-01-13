@@ -1,0 +1,178 @@
+import { useParams, Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import { useEffect, useState } from "react";
+
+const ALL_PRODUCTS = [
+  // PVC
+  {
+    _id: "1",
+    name: "PVC Pipe 4 Inch",
+    price: 1000,
+    image: "/images/pvc-pipe.jpg",
+    category: "pvc",
+    brand: "Birla",
+  },
+  {
+    _id: "2",
+    name: "PVC Pipe 3 Inch",
+    price: 900,
+    image: "/images/3pipe.jpg",
+    category: "pvc",
+    brand: "Birla",
+  },
+  {
+    _id: "3",
+    name: "PVC Pipe 2 Inch",
+    price: 600,
+    image: "/images/2pvcpipe.jpeg",
+    category: "pvc",
+    brand: "Birla",
+  },
+  {
+    _id: "4",
+    name: "PVC Pipe 1¼ Inch",
+    price: 450,
+    image: "/images/savainchpipe.jpg",
+    category: "pvc",
+    brand: "Birla",
+  },
+
+  // WASH BASIN
+  {
+    _id: "37",
+    name: "Wash Basin 24 × 18",
+    price: 1999,
+    image: "/images/washbasinwithpedestal.jpg",
+    category: "washbasin",
+    brand: "Aquatop",
+  },
+  {
+    _id: "38",
+    name: "Wash Basin 24 × 18",
+    price: 2299,
+    image: "/images/cera.jpg",
+    category: "washbasin",
+    brand: "Aquatop",
+  },
+];
+
+const ProductDetails = () => {
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const found = ALL_PRODUCTS.find((p) => p._id === id);
+    setProduct(found);
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  if (!product) {
+    return (
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-gray-500 text-lg">Product not found</p>
+        </div>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <Navbar />
+
+      <section className="bg-gray-100 min-h-screen py-10">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Breadcrumb */}
+          <div className="text-sm text-gray-500 mb-4">
+            <Link to="/" className="hover:text-blue-600">
+              Home
+            </Link>
+            <span className="mx-2">/</span>
+            <Link
+              to={`/category/${product.category}`}
+              className="capitalize hover:text-blue-600"
+            >
+              {product.category.replace("-", " ")}
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-gray-700 font-medium">
+              {product.name}
+            </span>
+          </div>
+
+          {/* Product Card */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 grid md:grid-cols-2 gap-8">
+            {/* Image */}
+            <div className="flex items-center justify-center">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full max-h-[360px] object-contain transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+
+            {/* Details */}
+            <div className="flex flex-col justify-between">
+              <div>
+                <h1 className="text-3xl font-bold text-gray-800">
+                  {product.name}
+                </h1>
+
+                <p className="text-gray-500 mt-2 capitalize">
+                  Category: {product.category.replace("-", " ")}
+                </p>
+
+                <p className="text-2xl font-semibold text-blue-600 mt-4">
+                  ₹{product.price}
+                </p>
+
+                <p className="text-lg font-bold text-red-500 mt-2">
+                  Brand: {product.brand}
+                </p>
+
+                <p className="text-gray-600 mt-5 leading-relaxed">
+                  High quality sanitary and plumbing product suitable for
+                  residential and commercial use. Durable, reliable, and easy
+                  to install.
+                </p>
+
+                {/* Wash Basin Note */}
+                {product.category === "washbasin" && (
+                  <div className="mt-4 rounded-lg bg-yellow-50 border border-yellow-200 p-4">
+                    <p className="text-sm text-yellow-800 leading-relaxed">
+                      Note: This product includes only the wash basin.
+                      Taps, bottle trap, waste coupling, and water tank
+                      are not included and must be purchased separately.
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* Actions */}
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:9205448629"
+                  className="flex-1 text-center bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition"
+                >
+                  Call to Order
+                </a>
+
+                <a
+                  href={`https://wa.me/919205448629?text=I am interested in ${product.name}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center border border-green-600 text-green-600 py-3 rounded-lg hover:bg-green-50 transition"
+                >
+                  WhatsApp Inquiry
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ProductDetails;
