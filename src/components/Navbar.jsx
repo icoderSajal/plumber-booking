@@ -15,9 +15,9 @@ const Navbar = () => {
           className="flex items-center gap-2"
           onClick={() => setMenuOpen(false)}
         >
-          <img src="/logo.png" alt="PipeMistri" className="h-9 w-auto" />
+          <img src="/logo.png" alt="PipeMistri" className="h-12 w-auto" />
           <span className="text-lg font-bold text-blue-600 hidden sm:block">
-            PipeMistri
+            Abhiyaan Sanitary
           </span>
         </Link>
 
@@ -31,6 +31,9 @@ const Navbar = () => {
           </Link> */}
           <Link to="/contact" className="hover:text-blue-600">
             Contact
+          </Link>
+          <Link to="/about" className="hover:text-blue-600">
+            About
           </Link>
           {/* <Link to="/admin" className="hover:text-blue-600">
             Dashboard
@@ -69,6 +72,13 @@ const Navbar = () => {
 
               <Link
                 to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-blue-600"
+              >
+                Contact
+              </Link>
+              <Link
+                to="/about"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-blue-600"
               >

@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { FaPhoneAlt, FaWhatsapp, FaStore, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ const Contact = () => {
         setSuccess("Your query has been submitted. We will contact you soon.");
         setFormData({ name: "", email: "", mobile: "", message: "" });
       }
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
@@ -50,97 +51,132 @@ const Contact = () => {
     <>
       <Navbar />
 
-      <section className="bg-gray-50 py-14 min-h-screen">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10">
-          {/* Info Section */}
-          <div>
-            <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-            <p className="text-gray-600 mb-6">
-              Plumbing services, sanitary products, or general queries. Reach
-              out and our team will assist you quickly.
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-3">
+              Contact Us
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Have a plumbing issue or looking for sanitary products? Send us
+              your query and we’ll get back to you quickly.
             </p>
-
-            <div className="space-y-3 text-gray-700 text-sm">
-              <p>
-                <span className="font-medium">Shop:</span> Abiyaan Sanitary
-              </p>
-              <p>
-                <span className="font-medium">Address:</span> Dugra Nagar Mod
-              </p>
-              <p>
-                <span className="font-medium">Phone:</span> 9205448629
-              </p>
-              <p>
-                <span className="font-medium">WhatsApp:</span> 9205448629
-              </p>
-            </div>
           </div>
 
-          {/* Form */}
-          <div className="bg-white rounded-xl shadow p-6 md:p-8">
-            <h3 className="text-xl font-semibold mb-4">Send Your Query</h3>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Info Card */}
+            <div className="bg-white rounded-2xl shadow p-8">
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+                Abhiyaan Sanitary & Plumber Service
+              </h3>
 
-            {error && (
-              <p className="mb-3 text-sm text-red-600 bg-red-50 p-2 rounded">
-                {error}
-              </p>
-            )}
+              <div className="space-y-4 text-gray-700">
+                <div className="flex items-center gap-3">
+                  <FaStore className="text-blue-600" />
+                  <span>Dugra Nagar Mod</span>
+                </div>
 
-            {success && (
-              <p className="mb-3 text-sm text-green-600 bg-green-50 p-2 rounded">
-                {success}
-              </p>
-            )}
+                <div className="flex items-center gap-3">
+                  <FaPhoneAlt className="text-blue-600" />
+                  <span>9205448629</span>
+                </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                type="text"
-                placeholder="Your Name"
-                className="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-blue-500"
-                required
-              />
+                <div className="flex items-center gap-3">
+                  <FaWhatsapp className="text-green-600" />
+                  <span>9205448629</span>
+                </div>
 
-              <input
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                type="email"
-                placeholder="Your Email"
-                className="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-blue-500"
-                required
-              />
+                <div className="flex items-center gap-3">
+                  <FaEnvelope className="text-blue-600" />
+                  <span>abhiyaan@gmail.com</span>
+                </div>
+              </div>
 
-              <input
-                name="mobile"
-                value={formData.mobile}
-                onChange={handleChange}
-                type="tel"
-                placeholder="Mobile Number"
-                className="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-blue-500"
-                required
-              />
+              <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
+                <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
+                  PVC & CPVC Pipes
+                </div>
+                <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
+                  Bathroom Fittings
+                </div>
+                <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
+                  Wash Basins
+                </div>
+                <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
+                  Plumbing Service
+                </div>
+              </div>
+            </div>
 
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows="4"
-                placeholder="Your message or product query"
-                className="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-blue-500"
-                required
-              ></textarea>
+            {/* Form Card */}
+            <div className="bg-white rounded-2xl shadow p-8">
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+                Send Your Query
+              </h3>
 
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition disabled:opacity-60"
-              >
-                {loading ? "Submitting..." : "Submit Query"}
-              </button>
-            </form>
+              {error && (
+                <p className="mb-4 text-sm text-red-600 bg-red-50 p-3 rounded-lg">
+                  {error}
+                </p>
+              )}
+
+              {success && (
+                <p className="mb-4 text-sm text-green-600 bg-green-50 p-3 rounded-lg">
+                  {success}
+                </p>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full border rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+
+                <input
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full border rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+
+                <input
+                  name="mobile"
+                  value={formData.mobile}
+                  onChange={handleChange}
+                  type="tel"
+                  placeholder="Mobile Number"
+                  className="w-full border rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows="4"
+                  placeholder="Describe your plumbing issue or product requirement"
+                  className="w-full border rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition disabled:opacity-60"
+                >
+                  {loading ? "Submitting..." : "Submit Query"}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

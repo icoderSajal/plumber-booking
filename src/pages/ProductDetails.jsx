@@ -131,32 +131,18 @@ const ALL_PRODUCTS = [
     category: "cpvc",
     brand: "Birla",
   },
+  
+  
   {
     _id: "17",
-    name: "CPVC Union 1 inch",
-    price: 90,
-    image: "/images/cpvcunion.jpg",
+    name: "CPVC Tank Nippe 1 inch",
+    price: 80,
+    image: "/images/tanknipplecpvc.jpg",
     category: "cpvc",
     brand: "Birla",
   },
   {
     _id: "18",
-    name: "CPVC Tank Nippe 1 inch",
-    price: 80,
-    image: "/images/tanknipplecpvc.jpg",
-    category: "cpvc",
-    brand: "Birla",
-  },
-  {
-    _id: "19",
-    name: "CPVC Tank Nippe 1 inch",
-    price: 80,
-    image: "/images/tanknipplecpvc.jpg",
-    category: "cpvc",
-    brand: "Birla",
-  },
-  {
-    _id: "20",
     name: "UPVC Pipe 3/4 inch",
     price: 160,
     image: "/images/upvcpipe.jpg",
@@ -164,7 +150,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "21",
+    _id: "19",
     name: "UPVC Elbow 3/4 inch",
     price: 20,
     image: "/images/upvcelbow.jpg",
@@ -172,7 +158,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "22",
+    _id: "20",
     name: "UPVC Elbow 3/4 * 1/2 inch",
     price: 60,
     image: "/images/upvcbelbow.jpg",
@@ -180,7 +166,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "23",
+    _id: "21",
     name: "UPVC Tee 3/4 inch",
     price: 30,
     image: "/images/upvctee.jpg",
@@ -188,7 +174,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "24",
+    _id: "22",
     name: "UPVC Tee 3/4 * 1/2 inch",
     price: 70,
     image: "/images/upvcteeb.jpg",
@@ -196,7 +182,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "25",
+    _id: "23",
     name: "UPVC Tank Nipple 3/4 inch",
     price: 70,
     image: "/images/upvctanknipple.jpg",
@@ -204,7 +190,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "26",
+    _id: "24",
     name: "UPVC Union 3/4 inch",
     price: 70,
     image: "/images/unionupvc.jpg",
@@ -212,7 +198,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "27",
+    _id: "25",
     name: "UPVC MTA 3/4 * 1/2 inch",
     price: 79,
     image: "/images/upvcfta.jpg",
@@ -220,7 +206,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "28",
+    _id: "26",
     name: "UPVC FTA 3/4 * 1/2 inch",
     price: 79,
     image: "/images/upvcfta.jpg",
@@ -228,7 +214,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "29",
+    _id: "27",
     name: "Wash Basin 24 *18",
     price: 1999,
     image: "/images/washbasinwithpedestal.jpg",
@@ -236,7 +222,7 @@ const ALL_PRODUCTS = [
     brand: "Aquatop",
   },
   {
-    _id: "30",
+    _id: "28",
     name: "Wash Basin 24 *18",
     price: 2299,
     image: "/images/cera.jpg",
@@ -244,7 +230,7 @@ const ALL_PRODUCTS = [
     brand: "Aquatop",
   },
   {
-    _id: "31",
+    _id: "29",
     name: "Wall Hung Wash Basin",
     price: 1899,
     image: "/images/washbasin.png",
@@ -252,7 +238,7 @@ const ALL_PRODUCTS = [
     brand: "Cera",
   },
   {
-    _id: "32",
+    _id: "30",
     name: "Table Top Wash Basin",
     price: 5299,
     image: "/images/table.png",
@@ -260,7 +246,7 @@ const ALL_PRODUCTS = [
     brand: "Cera",
   },
   {
-    _id: "33",
+    _id: "31",
     name: "Single Suit Wash Basin",
     price: 5599,
     image: "/images/single.jpg",
@@ -268,7 +254,7 @@ const ALL_PRODUCTS = [
     brand: "Cera",
   },
   {
-    _id: "34",
+    _id: "32",
     name: "Single Suit Wash Basin",
     price: 9999,
     image: "/images/vanity.jpg",
@@ -276,7 +262,7 @@ const ALL_PRODUCTS = [
     brand: "Jaquar",
   },
   {
-    _id: "35",
+    _id: "33",
     name: "Indian Toilet Seat 20 inch",
     price: 9999,
     image: "/images/indian.jpg",
@@ -284,7 +270,7 @@ const ALL_PRODUCTS = [
     brand: "Cava",
   },
   {
-    _id: "36",
+    _id: "34",
     name: "Indian Toilet Seat 23 inch",
     price: 899,
     image: "/images/vanity.jpg",
@@ -292,7 +278,7 @@ const ALL_PRODUCTS = [
     brand: "Cava",
   },
   {
-    _id: "37",
+    _id: "35",
     name: "Two Piece English Toilet Seat",
     price: 2799,
     image: "/images/west1.jpg",
@@ -300,7 +286,7 @@ const ALL_PRODUCTS = [
     brand: "Aquatop",
   },
   {
-    _id: "38",
+    _id: "36",
     name: "One Piece English Toilet Seat",
     price: 7299,
     image: "/images/west2.png",
@@ -308,7 +294,7 @@ const ALL_PRODUCTS = [
     brand: "Aquatop",
   },
   {
-    _id: "39",
+    _id: "37",
     name: "Wall Hung Toilet Seat",
     price: 14599,
     image: "/images/wallhung.jpg",
@@ -316,7 +302,7 @@ const ALL_PRODUCTS = [
     brand: "Jaquar",
   },
   {
-    _id: "41",
+    _id: "38",
     name: "PCV Tee 4 Inch",
     price: 110,
     image: "/images/teepvc.png",
@@ -324,7 +310,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "42",
+    _id: "39",
     name: "PCV YTee 4 Inch",
     price: 330,
     image: "/images/ytee.jpg",
@@ -332,7 +318,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "43",
+    _id: "40",
     name: "PCV Hubset 4 Inch",
     price: 300,
     image: "/images/hubset.jpg",
@@ -340,7 +326,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "44",
+    _id: "41",
     name: "PCV PTrap 4 Inch",
     price: 300,
     image: "/images/ptrap.jpg",
@@ -348,7 +334,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "45",
+    _id: "42",
     name: "PCV PTrap 4 * 3 Inch",
     price: 280,
     image: "/images/nanitrap.jpg",
@@ -356,7 +342,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "46",
+    _id: "43",
     name: "PCV Soket 4 Inch",
     price: 80,
     image: "/images/pvcsoket.jpg",
@@ -364,7 +350,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "47",
+    _id: "44",
     name: "PCV Soket 3 Inch",
     price: 60,
     image: "/images/upvcsoket.jpg",
@@ -372,7 +358,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "48",
+    _id: "45",
     name: "CPCV Soket 3/4 Inch",
     price: 15,
     image: "/images/cpvcsoket.jpg",
@@ -380,7 +366,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "49",
+    _id: "46",
     name: "CPCV Soket 1 Inch",
     price: 25,
     image: "/images/cpvcsoket.jpg",
@@ -388,7 +374,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "50",
+    _id: "47",
     name: "Swan Neck 9 inch Bend",
     price: 1299,
     image: "/images/swantab.jpg",
@@ -396,7 +382,7 @@ const ALL_PRODUCTS = [
     brand: "Birla",
   },
   {
-    _id: "51",
+    _id: "48",
     name: "Sink Cock 9 inch Bend",
     price: 1399,
     image: "/images/sinktab.jpg",
@@ -404,7 +390,7 @@ const ALL_PRODUCTS = [
     brand: "Country Gold",
   },
   {
-    _id: "52",
+    _id: "49",
     name: "Nozel Cock",
     price: 499,
     image: "/images/nozeltab.jpg",
@@ -412,7 +398,7 @@ const ALL_PRODUCTS = [
     brand: "Vikson",
   },
   {
-    _id: "53",
+    _id: "50",
     name: "Nozel Cock",
     price: 599,
     image: "/images/washtab.jpg",
@@ -420,7 +406,7 @@ const ALL_PRODUCTS = [
     brand: "Vikson",
   },
   {
-    _id: "54",
+    _id: "51",
     name: "Angel Valve Brass",
     price: 399,
     image: "/images/angelb.jpg",
@@ -428,7 +414,7 @@ const ALL_PRODUCTS = [
     brand: "Gravity",
   },
   {
-    _id: "55",
+    _id: "52",
     name: "2 Way Big Cock Brass",
     price: 999,
     image: "/images/2waybigcock.jpg",
@@ -436,7 +422,7 @@ const ALL_PRODUCTS = [
     brand: "Gravity",
   },
   {
-    _id: "56",
+    _id: "53",
     name: "2 Way Big Cock Brass",
     price: 999,
     image: "/images/2waybigcock.jpg",
@@ -444,7 +430,7 @@ const ALL_PRODUCTS = [
     brand: "Gravity",
   },
   {
-    _id: "57",
+    _id: "54",
     name: "Long Body Brass",
     price: 799,
     image: "/images/longbody.jpg",
@@ -452,7 +438,7 @@ const ALL_PRODUCTS = [
     brand: "Gravity",
   },
   {
-    _id: "58",
+    _id: "55",
     name: "Short Body Brass",
     price: 699,
     image: "/images/shortbody.jpg",
@@ -460,7 +446,7 @@ const ALL_PRODUCTS = [
     brand: "Vikson",
   },
   {
-    _id: "59",
+    _id: "56",
     name: "Short Body PVC",
     price: 69,
     image: "/images/pvcshortbody.jpg",
@@ -468,7 +454,7 @@ const ALL_PRODUCTS = [
     brand: "CK",
   },
   {
-    _id: "60",
+    _id: "57",
     name: "Short Body PVC",
     price: 89,
     image: "/images/pvclongbody.jpg",
