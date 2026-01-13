@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import ProductCard from "../components/ProductCard";
+import { useParams, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { useEffect, useState } from "react";
 
 const ALL_PRODUCTS = [
   {
@@ -10,6 +9,7 @@ const ALL_PRODUCTS = [
     price: 1000,
     image: "/images/pvc-pipe.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "2",
@@ -17,6 +17,7 @@ const ALL_PRODUCTS = [
     price: 900,
     image: "/images/3pipe.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "3",
@@ -24,6 +25,7 @@ const ALL_PRODUCTS = [
     price: 600,
     image: "/images/2pvcpipe.jpeg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "4",
@@ -31,6 +33,7 @@ const ALL_PRODUCTS = [
     price: 450,
     image: "/images/savainchpipe.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "5",
@@ -38,6 +41,7 @@ const ALL_PRODUCTS = [
     price: 80,
     image: "/images/4inchElbow.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "6",
@@ -45,6 +49,7 @@ const ALL_PRODUCTS = [
     price: 60,
     image: "/images/4inchElbow.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "7",
@@ -52,6 +57,7 @@ const ALL_PRODUCTS = [
     price: 45,
     image: "/images/2inchelbow.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "8",
@@ -59,6 +65,7 @@ const ALL_PRODUCTS = [
     price: 25,
     image: "/images/2inchelbow.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "9",
@@ -66,6 +73,7 @@ const ALL_PRODUCTS = [
     price: 180,
     image: "/images/cpvcpipe.jpg",
     category: "cpvc",
+    brand: "Astral",
   },
   {
     _id: "10",
@@ -73,6 +81,7 @@ const ALL_PRODUCTS = [
     price: 280,
     image: "/images/cpvcpipe.jpg",
     category: "cpvc",
+    brand: "Astral",
   },
   {
     _id: "11",
@@ -80,6 +89,7 @@ const ALL_PRODUCTS = [
     price: 35,
     image: "/images/elbow.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "12",
@@ -87,6 +97,7 @@ const ALL_PRODUCTS = [
     price: 45,
     image: "/images/teecpvc.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "13",
@@ -94,6 +105,7 @@ const ALL_PRODUCTS = [
     price: 90,
     image: "/images/elbowb.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "14",
@@ -101,6 +113,7 @@ const ALL_PRODUCTS = [
     price: 110,
     image: "/images/teecpvcb.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "15",
@@ -108,6 +121,7 @@ const ALL_PRODUCTS = [
     price: 130,
     image: "/images/cpvcmta.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "16",
@@ -115,6 +129,7 @@ const ALL_PRODUCTS = [
     price: 150,
     image: "/images/cpvcfta.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "17",
@@ -122,6 +137,7 @@ const ALL_PRODUCTS = [
     price: 90,
     image: "/images/cpvcunion.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "18",
@@ -129,6 +145,7 @@ const ALL_PRODUCTS = [
     price: 80,
     image: "/images/tanknipplecpvc.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "19",
@@ -136,6 +153,7 @@ const ALL_PRODUCTS = [
     price: 80,
     image: "/images/tanknipplecpvc.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "20",
@@ -143,6 +161,7 @@ const ALL_PRODUCTS = [
     price: 160,
     image: "/images/upvcpipe.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "21",
@@ -150,6 +169,7 @@ const ALL_PRODUCTS = [
     price: 20,
     image: "/images/upvcelbow.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "22",
@@ -157,6 +177,7 @@ const ALL_PRODUCTS = [
     price: 60,
     image: "/images/upvcbelbow.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "23",
@@ -164,6 +185,7 @@ const ALL_PRODUCTS = [
     price: 30,
     image: "/images/upvctee.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "24",
@@ -171,6 +193,7 @@ const ALL_PRODUCTS = [
     price: 70,
     image: "/images/upvcteeb.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "25",
@@ -178,6 +201,7 @@ const ALL_PRODUCTS = [
     price: 70,
     image: "/images/upvctanknipple.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "26",
@@ -185,6 +209,7 @@ const ALL_PRODUCTS = [
     price: 70,
     image: "/images/unionupvc.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "27",
@@ -192,6 +217,7 @@ const ALL_PRODUCTS = [
     price: 79,
     image: "/images/upvcfta.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "28",
@@ -199,6 +225,7 @@ const ALL_PRODUCTS = [
     price: 79,
     image: "/images/upvcfta.jpg",
     category: "upvc",
+    brand: "Birla",
   },
   {
     _id: "29",
@@ -206,6 +233,7 @@ const ALL_PRODUCTS = [
     price: 1999,
     image: "/images/washbasinwithpedestal.jpg",
     category: "washbasin",
+    brand: "Aquatop",
   },
   {
     _id: "30",
@@ -213,6 +241,7 @@ const ALL_PRODUCTS = [
     price: 2299,
     image: "/images/cera.jpg",
     category: "washbasin",
+    brand: "Aquatop",
   },
   {
     _id: "31",
@@ -220,6 +249,7 @@ const ALL_PRODUCTS = [
     price: 1899,
     image: "/images/washbasin.png",
     category: "washbasin",
+    brand: "Cera",
   },
   {
     _id: "32",
@@ -227,6 +257,7 @@ const ALL_PRODUCTS = [
     price: 5299,
     image: "/images/table.png",
     category: "washbasin",
+    brand: "Cera",
   },
   {
     _id: "33",
@@ -234,6 +265,7 @@ const ALL_PRODUCTS = [
     price: 5599,
     image: "/images/single.jpg",
     category: "washbasin",
+    brand: "Cera",
   },
   {
     _id: "34",
@@ -241,6 +273,7 @@ const ALL_PRODUCTS = [
     price: 9999,
     image: "/images/vanity.jpg",
     category: "washbasin",
+    brand: "Jaquar",
   },
   {
     _id: "35",
@@ -248,13 +281,15 @@ const ALL_PRODUCTS = [
     price: 9999,
     image: "/images/indian.jpg",
     category: "toilet",
+    brand: "Cava",
   },
   {
     _id: "36",
-    name: "Indian Toilet Seat 20 inch",
+    name: "Indian Toilet Seat 23 inch",
     price: 899,
     image: "/images/vanity.jpg",
     category: "toilet",
+    brand: "Cava",
   },
   {
     _id: "37",
@@ -262,6 +297,7 @@ const ALL_PRODUCTS = [
     price: 2799,
     image: "/images/west1.jpg",
     category: "toilet",
+    brand: "Aquatop",
   },
   {
     _id: "38",
@@ -269,6 +305,7 @@ const ALL_PRODUCTS = [
     price: 7299,
     image: "/images/west2.png",
     category: "toilet",
+    brand: "Aquatop",
   },
   {
     _id: "39",
@@ -276,6 +313,7 @@ const ALL_PRODUCTS = [
     price: 14599,
     image: "/images/wallhung.jpg",
     category: "toilet",
+    brand: "Jaquar",
   },
   {
     _id: "41",
@@ -283,6 +321,7 @@ const ALL_PRODUCTS = [
     price: 110,
     image: "/images/teepvc.png",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "42",
@@ -290,6 +329,7 @@ const ALL_PRODUCTS = [
     price: 330,
     image: "/images/ytee.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "43",
@@ -297,6 +337,7 @@ const ALL_PRODUCTS = [
     price: 300,
     image: "/images/hubset.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "44",
@@ -304,6 +345,7 @@ const ALL_PRODUCTS = [
     price: 300,
     image: "/images/ptrap.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "45",
@@ -311,6 +353,7 @@ const ALL_PRODUCTS = [
     price: 280,
     image: "/images/nanitrap.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "46",
@@ -318,6 +361,7 @@ const ALL_PRODUCTS = [
     price: 80,
     image: "/images/pvcsoket.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "47",
@@ -325,6 +369,7 @@ const ALL_PRODUCTS = [
     price: 60,
     image: "/images/upvcsoket.jpg",
     category: "pvc",
+    brand: "Birla",
   },
   {
     _id: "48",
@@ -332,6 +377,7 @@ const ALL_PRODUCTS = [
     price: 15,
     image: "/images/cpvcsoket.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "49",
@@ -339,6 +385,7 @@ const ALL_PRODUCTS = [
     price: 25,
     image: "/images/cpvcsoket.jpg",
     category: "cpvc",
+    brand: "Birla",
   },
   {
     _id: "50",
@@ -346,6 +393,7 @@ const ALL_PRODUCTS = [
     price: 1299,
     image: "/images/swantab.jpg",
     category: "bathroom-taps",
+    brand: "Birla",
   },
   {
     _id: "51",
@@ -353,6 +401,7 @@ const ALL_PRODUCTS = [
     price: 1399,
     image: "/images/sinktab.jpg",
     category: "bathroom-taps",
+    brand: "Country Gold",
   },
   {
     _id: "52",
@@ -360,6 +409,7 @@ const ALL_PRODUCTS = [
     price: 499,
     image: "/images/nozeltab.jpg",
     category: "bathroom-taps",
+    brand: "Vikson",
   },
   {
     _id: "53",
@@ -367,6 +417,7 @@ const ALL_PRODUCTS = [
     price: 599,
     image: "/images/washtab.jpg",
     category: "bathroom-taps",
+    brand: "Vikson",
   },
   {
     _id: "54",
@@ -374,6 +425,7 @@ const ALL_PRODUCTS = [
     price: 399,
     image: "/images/angelb.jpg",
     category: "bathroom-taps",
+    brand: "Gravity",
   },
   {
     _id: "55",
@@ -381,6 +433,7 @@ const ALL_PRODUCTS = [
     price: 999,
     image: "/images/2waybigcock.jpg",
     category: "bathroom-taps",
+    brand: "Gravity",
   },
   {
     _id: "56",
@@ -388,6 +441,7 @@ const ALL_PRODUCTS = [
     price: 999,
     image: "/images/2waybigcock.jpg",
     category: "bathroom-taps",
+    brand: "Gravity",
   },
   {
     _id: "57",
@@ -395,6 +449,7 @@ const ALL_PRODUCTS = [
     price: 799,
     image: "/images/longbody.jpg",
     category: "bathroom-taps",
+    brand: "Gravity",
   },
   {
     _id: "58",
@@ -402,6 +457,7 @@ const ALL_PRODUCTS = [
     price: 699,
     image: "/images/shortbody.jpg",
     category: "bathroom-taps",
+    brand: "Vikson",
   },
   {
     _id: "59",
@@ -409,6 +465,7 @@ const ALL_PRODUCTS = [
     price: 69,
     image: "/images/pvcshortbody.jpg",
     category: "pvcbathroom-taps",
+    brand: "CK",
   },
   {
     _id: "60",
@@ -416,44 +473,119 @@ const ALL_PRODUCTS = [
     price: 89,
     image: "/images/pvclongbody.jpg",
     category: "pvcbathroom-taps",
+    brand: "CK",
   },
 ];
 
-const CategoryProducts = () => {
-  const { category } = useParams();
-  const [products, setProducts] = useState([]);
+const ProductDetails = () => {
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    const filteredProducts = ALL_PRODUCTS.filter(
-      (product) => product.category === category
-    );
+    const found = ALL_PRODUCTS.find((p) => p._id === id);
+    setProduct(found);
+    window.scrollTo(0, 0);
+  }, [id]);
 
-    setProducts(filteredProducts);
-  }, [category]);
+  if (!product) {
+    return (
+      <>
+        <Navbar />
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-gray-500 text-lg">Product not found</p>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
       <Navbar />
 
-      <section className="bg-gray-100 min-h-screen py-8">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 capitalize">
-            {category.replace("-", " ")}
-          </h2>
+      <section className="bg-gray-100 min-h-screen py-10">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Breadcrumb */}
+          <div className="text-sm text-gray-500 mb-4">
+            <Link to="/" className="hover:text-blue-600">
+              Home
+            </Link>
+            <span className="mx-2">/</span>
+            <Link
+              to={`/category/${product.category}`}
+              className="capitalize hover:text-blue-600"
+            >
+              {product.category.replace("-", " ")}
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-gray-700 font-medium">{product.name}</span>
+          </div>
 
-          {products.length === 0 ? (
-            <p className="text-gray-500">No products found.</p>
-          ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              {products.map((product) => (
-                <ProductCard key={product._id} product={product} />
-              ))}
+          {/* Card */}
+          <div
+            className="bg-white rounded-2xl shadow-lg p-6 md:p-8 grid md:grid-cols-2 gap-8
+                          animate-fadeIn"
+          >
+            {/* Image */}
+            <div className="flex items-center justify-center">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full max-h-[360px] object-contain
+                           transition-transform duration-300 hover:scale-105"
+              />
             </div>
-          )}
+
+            {/* Details */}
+            <div className="flex flex-col justify-between">
+              <div>
+                <h1 className="text-3xl font-bold text-gray-800">
+                  {product.name}
+                </h1>
+
+                <p className="text-gray-500 mt-2 capitalize">
+                  Category: {product.category.replace("-", " ")}
+                </p>
+
+                <p className="text-2xl font-semibold text-blue-600 mt-4">
+                  ₹{product.price}
+                </p>
+                <p className="text-2xl font-bold text-red-500 mt-4">
+                  {product.brand}
+                </p>
+
+                <p className="text-gray-600 mt-5 leading-relaxed">
+                  High quality sanitary and plumbing product suitable for
+                  residential and commercial use. Durable, reliable, and easy to
+                  install.
+                </p>
+              </div>
+
+              {/* Actions */}
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:9205448629"
+                  className="flex-1 text-center bg-green-600 text-white py-3 rounded-lg
+                             hover:bg-green-700 transition transform hover:-translate-y-0.5"
+                >
+                  Call to Order
+                </a>
+
+                <a
+                  href={`https://wa.me/919205448629?text=I am interested in ${product.name}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center border border-green-600 text-green-600 py-3 rounded-lg
+                             hover:bg-green-50 transition"
+                >
+                  WhatsApp Inquiry
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
   );
 };
 
-export default CategoryProducts;
+export default ProductDetails;

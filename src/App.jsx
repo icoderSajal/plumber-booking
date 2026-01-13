@@ -12,6 +12,7 @@ import Complaints from "./dashboard/Complaints";
 import Queries from "./dashboard/Queries";
 import CategoryProducts from "./pages/CategoryProducts";
 import NotFound from "./pages/NotFound";
+import ProductDetails from "./pages/ProductDetails";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/products" element={<ProductsByCategory />} />
         <Route path="/category/:category" element={<CategoryProducts />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
 
         {/* Admin Pages (Nested under AdminLayout) */}
         <Route path="/admin" element={<AdminLayout />}>
