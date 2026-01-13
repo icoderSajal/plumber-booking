@@ -48,7 +48,7 @@ const Carousel = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <div className="mb-8 flex justify-between items-center">
-          <h2 className="text-2xl font-bold text-gray-800">
+          <h2 className="text-2xl font-bold text-blue-600">
             Ceramic & Bathroom Essentials
           </h2>
         </div>

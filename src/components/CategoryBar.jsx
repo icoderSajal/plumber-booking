@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaFaucet, FaToilet, FaSink, FaTools, FaCogs } from "react-icons/fa";
+import { MdOutlinePropaneTank } from "react-icons/md";
 
 const categories = [
   {
@@ -53,7 +54,15 @@ const categories = [
   {
     name: "PVC Taps",
     icon: <FaFaucet />,
-    link: "/category/pvcbathroom-taps",
+    link: "/category/pvc-bathroom-taps",
+    bg: "bg-cyan-50",
+    hoverBg: "hover:bg-cyan-100",
+    iconColor: "text-cyan-600",
+  },
+  {
+    name: "PVC Tanks",
+    icon: <MdOutlinePropaneTank />,
+    link: "/category/pvc-tanks",
     bg: "bg-cyan-50",
     hoverBg: "hover:bg-cyan-100",
     iconColor: "text-cyan-600",
