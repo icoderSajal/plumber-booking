@@ -82,7 +82,7 @@ const Navbar = () => {
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-blue-600"
               >
-                Contact
+                About Us
               </Link>
 
               {/* <Link
