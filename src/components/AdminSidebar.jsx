@@ -28,7 +28,7 @@ const AdminSidebar = ({ isOpen, onClose }) => {
             Dashboard
           </Link>
 
-          <Link
+          {/* <Link
             to="/admin/add-admin"
             onClick={onClose}
             className="block px-4 py-2 rounded hover:bg-blue-50"
@@ -42,7 +42,7 @@ const AdminSidebar = ({ isOpen, onClose }) => {
             className="block px-4 py-2 rounded hover:bg-blue-50"
           >
             Add New Plumber
-          </Link>
+          </Link> */}
 
           <Link
             to="/admin/complaints"

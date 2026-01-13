@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      {/* <CategoryBar /> */}
+      <CategoryBar />
       <Carousel />
       <Hero />
 
