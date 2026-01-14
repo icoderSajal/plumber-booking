@@ -67,14 +67,14 @@ const categories = [
     hoverBg: "hover:bg-cyan-100",
     iconColor: "text-cyan-600",
   },
-  // {
-  //   name: "Accessories",
-  //   icon: <FaCogs />,
-  //   link: "/category/accessories",
-  //   bg: "bg-yellow-50",
-  //   hoverBg: "hover:bg-yellow-100",
-  //   iconColor: "text-yellow-600",
-  // },
+  {
+    name: "Accessories",
+    icon: <FaCogs />,
+    link: "/category/accessories",
+    bg: "bg-yellow-50",
+    hoverBg: "hover:bg-yellow-100",
+    iconColor: "text-yellow-600",
+  },
 ];
 
 const CategoryBar = () => {

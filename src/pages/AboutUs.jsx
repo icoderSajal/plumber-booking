@@ -104,34 +104,48 @@ const AboutUs = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-blue-600 text-white py-14">
-          <div className="max-w-7xl mx-auto px-6 text-center">
+        <section className="bg-blue-600 text-white py-16">
+          <div className="max-w-7xl mx-auto px-6 text-center flex flex-col items-center">
             <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-3xl font-bold mb-6"
+              className="text-3xl font-bold mb-8"
             >
               Get in Touch
             </motion.h2>
+
+            {/* Logo */}
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: [1, 1.05, 1], y: [0, -6, 0], opacity: 1 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="bg-white rounded-full p-4 shadow-lg mb-6"
+            >
+              <img
+                src="/logo.png"
+                alt="Abhiyaan Logo"
+                className="w-32 h-32 rounded-full object-cover"
+              />
+            </motion.div>
 
             <p className="text-blue-100 mb-6">
               For sanitary products or plumbing services, contact us anytime.
             </p>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <div className="flex items-center gap-3 justify-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-6 mb-4">
+              <div className="flex items-center gap-3">
                 <FaPhoneAlt />
                 <span>9205448629</span>
               </div>
-              <div className="flex items-center gap-3 justify-center">
+              <div className="flex items-center gap-3">
                 <FaEnvelope />
                 <span>abhiyaan@gmail.com</span>
               </div>
             </div>
 
-            <p className="mt-6 text-blue-200 text-sm">Owner: Sajal Bajaj</p>
+            <p className="text-blue-200 text-sm">Owner: Sajal Bajaj</p>
           </div>
         </section>
       </div>
