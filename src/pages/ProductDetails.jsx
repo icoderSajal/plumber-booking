@@ -284,7 +284,7 @@ const ALL_PRODUCTS = [
     _id: "35",
     name: "UPVC MTA 3/4 × 1/2 Inch",
     price: 79,
-    image: "/images/upvcfta.jpg",
+    image: "/images/mtaupvc.jpg",
     category: "upvc",
     brand: "Birla",
   },
