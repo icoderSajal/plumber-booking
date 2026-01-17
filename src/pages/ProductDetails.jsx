@@ -102,7 +102,7 @@ const ALL_PRODUCTS = [
   },
   {
     _id: "13",
-    name: "PVC P-Trap 4 × 3 Inch",
+    name: "PVC NaniTrap 4 × 3 Inch",
     price: 280,
     image: "/images/nanitrap.jpg",
     category: "pvc",
