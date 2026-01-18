@@ -7,7 +7,7 @@ const ALL_PRODUCTS = [
   {
     _id: "1",
     name: "PVC Pipe 4 Inch",
-    price: 1000,
+    price: 1050,
     image: "/images/pvc-pipe.jpg",
     category: "pvc",
     brand: "Birla",
