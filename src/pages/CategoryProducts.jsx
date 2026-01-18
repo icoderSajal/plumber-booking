@@ -477,7 +477,8 @@ const ALL_PRODUCTS = [
     _id: "58",
     name: "PVC Water Tank 500 L",
     price: 2800,
-    image: "/images/tank.jpg",
+    image:
+      "https://5.imimg.com/data5/SELLER/Default/2023/12/367319833/RD/XY/LR/15564909/3-layer-water-tank-eco-500x500.jpg",
     category: "pvc-tanks",
     brand: "Aplapollo NEO",
   },
