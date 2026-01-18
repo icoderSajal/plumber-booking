@@ -545,6 +545,14 @@ const ALL_PRODUCTS = [
     category: "bathroom-taps",
     brand: "Vikson",
   },
+  {
+    _id: "67",
+    name: "2 Way Angle Cock",
+    price: 899,
+    image: "https://m.media-amazon.com/images/I/61-3SXpEOIL.jpg",
+    category: "bathroom-taps",
+    brand: "Vikson",
+  },
 ];
 
 const ProductDetails = () => {

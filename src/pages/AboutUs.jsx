@@ -28,7 +28,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+              src="/banner.png"
               alt="Sanitary Bathroom"
               className="rounded-xl shadow-lg w-full h-[280px] object-cover"
             />
