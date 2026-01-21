@@ -4,6 +4,7 @@ import Stats from "../components/Stats";
 import Footer from "../components/Footer";
 import CategoryBar from "../components/CategoryBar";
 import Carousel from "../components/Carousel";
+import CustomerReviews from "../components/CustomerReviews";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero />
 
       <Stats />
+      <CustomerReviews />
       <Footer />
     </>
   );
