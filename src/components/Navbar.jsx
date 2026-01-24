@@ -85,13 +85,13 @@ const Navbar = () => {
                 About Us
               </Link>
 
-              {/* <Link
-                to="/admin"
+              <Link
+                to="/book-plumber"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-blue-600"
               >
-                Dashboard
-              </Link> */}
+                Book Plumber
+              </Link>
             </div>
           </div>
         </div>

@@ -554,6 +554,15 @@ const ALL_PRODUCTS = [
     category: "bathroom-taps",
     brand: "Vikson",
   },
+
+  {
+    _id: "68",
+    name: "Single Suit",
+    price: 3099,
+    image: "/images/damru-washbasin.png",
+    category: "washbasin",
+    brand: "Vikson",
+  },
 ];
 
 const ProductDetails = () => {
