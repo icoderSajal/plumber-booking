@@ -585,6 +585,8 @@ const ProductDetails = () => {
       </>
     );
   }
+  const productUrl = `${window.location.origin}/product/${product._id}`;
+  //https://plumber-booking.vercel.app/product/26
 
   return (
     <>
@@ -666,7 +668,9 @@ const ProductDetails = () => {
                 </a>
 
                 <a
-                  href={`https://wa.me/919205448629?text=I am interested in ${product.name}`}
+                  href={`https://wa.me/919205448629?text=${encodeURIComponent(
+                    `\n\n${product.name}\nPrice: ₹${product.price}\nBrand: ${product.brand}\n\n Hello, I am Interested this Product\n\nProduct Link:\n${productUrl}`,
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 text-center border border-green-600 text-green-600 py-3 rounded-lg hover:bg-green-50 transition"
