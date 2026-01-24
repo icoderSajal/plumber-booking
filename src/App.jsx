@@ -14,6 +14,7 @@ import CategoryProducts from "./pages/CategoryProducts";
 import NotFound from "./pages/NotFound";
 import ProductDetails from "./pages/ProductDetails";
 import AboutUs from "./pages/AboutUs";
+import UserComplaints from "./components/UserComplaints";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/category/:category" element={<CategoryProducts />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/complaints" element={<UserComplaints />} />
 
         {/* Admin Pages (Nested under AdminLayout) */}
         <Route path="/admin" element={<AdminLayout />}>
