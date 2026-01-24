@@ -11,7 +11,7 @@ const Complaints = () => {
       try {
         const { data } = await axios.get(
           "https://plumber-backend.onrender.com/api/complaints/all",
-          { withCredentials: true }
+          { withCredentials: true },
         );
 
         if (data.success) {
@@ -26,6 +26,10 @@ const Complaints = () => {
 
     fetchComplaints();
   }, []);
+
+  const maskMobile = (number) => {
+    return "XXXXXX" + number.slice(-4);
+  };
 
   const statusStyles = {
     Pending: "bg-yellow-100 text-yellow-700",
@@ -67,7 +71,7 @@ const Complaints = () => {
               >
                 <td className="p-3">{item.name}</td>
                 <td className="p-3">{item.service}</td>
-                <td className="p-3">{item.mobile}</td>
+                <td className="p-3"> {maskMobile(item.mobile)}</td>
                 <td className="p-3">
                   {new Date(item.preferredDate).toLocaleDateString()}
                 </td>
