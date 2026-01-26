@@ -12,6 +12,7 @@ const ALL_PRODUCTS = [
     image: "/images/pvc-pipe.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "2",
@@ -20,6 +21,7 @@ const ALL_PRODUCTS = [
     image: "/images/3pipe.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "3",
@@ -28,6 +30,7 @@ const ALL_PRODUCTS = [
     image: "/images/2pvcpipe.jpeg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "4",
@@ -36,6 +39,7 @@ const ALL_PRODUCTS = [
     image: "/images/savainchpipe.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "5",
@@ -44,6 +48,7 @@ const ALL_PRODUCTS = [
     image: "/images/4inchElbow.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "6",
@@ -52,6 +57,7 @@ const ALL_PRODUCTS = [
     image: "/images/4inchElbow.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "7",
@@ -60,6 +66,7 @@ const ALL_PRODUCTS = [
     image: "/images/2inchelbow.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "8",
@@ -68,6 +75,7 @@ const ALL_PRODUCTS = [
     image: "/images/2inchelbow.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "9",
@@ -76,6 +84,7 @@ const ALL_PRODUCTS = [
     image: "/images/teepvc.png",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "10",
@@ -84,6 +93,7 @@ const ALL_PRODUCTS = [
     image: "/images/ytee.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "11",
@@ -92,6 +102,7 @@ const ALL_PRODUCTS = [
     image: "/images/hubset.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "12",
@@ -100,6 +111,7 @@ const ALL_PRODUCTS = [
     image: "/images/ptrap.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "13",
@@ -108,6 +120,7 @@ const ALL_PRODUCTS = [
     image: "/images/nanitrap.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "14",
@@ -116,6 +129,7 @@ const ALL_PRODUCTS = [
     image: "/images/pvcsoket.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "15",
@@ -124,6 +138,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvcsoket.jpg",
     category: "pvc",
     brand: "Birla",
+    offer: "0 %",
   },
 
   // CPVC
@@ -134,6 +149,7 @@ const ALL_PRODUCTS = [
     image: "/images/cpvcpipe.jpg",
     category: "cpvc",
     brand: "Astral",
+    offer: "0 %",
   },
   {
     _id: "17",
@@ -142,6 +158,7 @@ const ALL_PRODUCTS = [
     image: "/images/cpvcpipe.jpg",
     category: "cpvc",
     brand: "Astral",
+    offer: "0 %",
   },
   {
     _id: "18",
@@ -150,6 +167,7 @@ const ALL_PRODUCTS = [
     image: "/images/elbow.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "19",
@@ -158,6 +176,7 @@ const ALL_PRODUCTS = [
     image: "/images/teecpvc.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "20",
@@ -166,6 +185,7 @@ const ALL_PRODUCTS = [
     image: "/images/elbowb.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "21",
@@ -174,6 +194,7 @@ const ALL_PRODUCTS = [
     image: "/images/teecpvcb.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "22",
@@ -182,6 +203,7 @@ const ALL_PRODUCTS = [
     image: "/images/cpvcmta.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "23",
@@ -190,6 +212,7 @@ const ALL_PRODUCTS = [
     image: "/images/cpvcfta.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "24",
@@ -198,6 +221,7 @@ const ALL_PRODUCTS = [
     image: "/images/tanknipplecpvc.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "25",
@@ -206,6 +230,7 @@ const ALL_PRODUCTS = [
     image: "/images/cpvcsoket.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "26",
@@ -214,6 +239,7 @@ const ALL_PRODUCTS = [
     image: "/images/cpvcsoket.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "27",
@@ -222,6 +248,7 @@ const ALL_PRODUCTS = [
     image: "/images/cpvcunion.jpg",
     category: "cpvc",
     brand: "Birla",
+    offer: "0 %",
   },
 
   // UPVC
@@ -232,6 +259,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvcpipe.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "29",
@@ -240,6 +268,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvcelbow.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "30",
@@ -248,6 +277,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvcbelbow.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "31",
@@ -256,6 +286,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvctee.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "32",
@@ -264,6 +295,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvcteeb.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "33",
@@ -272,6 +304,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvctanknipple.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "34",
@@ -280,6 +313,7 @@ const ALL_PRODUCTS = [
     image: "/images/unionupvc.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "35",
@@ -288,6 +322,7 @@ const ALL_PRODUCTS = [
     image: "/images/mtaupvc.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "36",
@@ -296,6 +331,7 @@ const ALL_PRODUCTS = [
     image: "/images/upvcfta.jpg",
     category: "upvc",
     brand: "Birla",
+    offer: "0 %",
   },
 
   // WASH BASIN
@@ -306,6 +342,7 @@ const ALL_PRODUCTS = [
     image: "/images/washbasinwithpedestal.jpg",
     category: "washbasin",
     brand: "Aquatop",
+    offer: "0 %",
   },
   {
     _id: "38",
@@ -314,6 +351,7 @@ const ALL_PRODUCTS = [
     image: "/images/cera.jpg",
     category: "washbasin",
     brand: "Aquatop",
+    offer: "0 %",
   },
   {
     _id: "39",
@@ -322,6 +360,7 @@ const ALL_PRODUCTS = [
     image: "/images/washbasin.png",
     category: "washbasin",
     brand: "Cera",
+    offer: "0 %",
   },
   {
     _id: "40",
@@ -330,6 +369,7 @@ const ALL_PRODUCTS = [
     image: "/images/table.png",
     category: "washbasin",
     brand: "Cera",
+    offer: "0 %",
   },
   {
     _id: "41",
@@ -338,6 +378,7 @@ const ALL_PRODUCTS = [
     image: "/images/single.jpg",
     category: "washbasin",
     brand: "Cera",
+    offer: "0 %",
   },
   {
     _id: "42",
@@ -346,6 +387,7 @@ const ALL_PRODUCTS = [
     image: "/images/vanity.jpg",
     category: "washbasin",
     brand: "Jaquar",
+    offer: "0 %",
   },
 
   // TOILET
@@ -356,6 +398,7 @@ const ALL_PRODUCTS = [
     image: "/images/indian.jpg",
     category: "toilet",
     brand: "Cava",
+    offer: "0 %",
   },
   {
     _id: "44",
@@ -364,6 +407,7 @@ const ALL_PRODUCTS = [
     image: "/images/indian.jpg",
     category: "toilet",
     brand: "Cava",
+    offer: "0 %",
   },
   {
     _id: "45",
@@ -372,6 +416,7 @@ const ALL_PRODUCTS = [
     image: "/images/west1.jpg",
     category: "toilet",
     brand: "Aquatop",
+    offer: "0 %",
   },
   {
     _id: "46",
@@ -380,7 +425,9 @@ const ALL_PRODUCTS = [
     image: "/images/west2.png",
     category: "toilet",
     brand: "Aquatop",
+    offer: "0 %",
   },
+
   {
     _id: "47",
     name: "Wall Hung Toilet Seat",
@@ -388,6 +435,7 @@ const ALL_PRODUCTS = [
     image: "/images/wallhung.jpg",
     category: "toilet",
     brand: "Jaquar",
+    offer: "0 %",
   },
 
   // BATHROOM TAPS
@@ -398,6 +446,7 @@ const ALL_PRODUCTS = [
     image: "/images/swantab.jpg",
     category: "bathroom-taps",
     brand: "Birla",
+    offer: "0 %",
   },
   {
     _id: "49",
@@ -406,6 +455,7 @@ const ALL_PRODUCTS = [
     image: "/images/sinktab.jpg",
     category: "bathroom-taps",
     brand: "Country Gold",
+    offer: "0 %",
   },
   {
     _id: "50",
@@ -414,6 +464,7 @@ const ALL_PRODUCTS = [
     image: "/images/nozeltab.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "51",
@@ -422,6 +473,7 @@ const ALL_PRODUCTS = [
     image: "/images/washtab.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "52",
@@ -430,6 +482,7 @@ const ALL_PRODUCTS = [
     image: "/images/angelb.jpg",
     category: "bathroom-taps",
     brand: "Gravity",
+    offer: "0 %",
   },
   {
     _id: "53",
@@ -438,6 +491,7 @@ const ALL_PRODUCTS = [
     image: "/images/2waybigcock.jpg",
     category: "bathroom-taps",
     brand: "Gravity",
+    offer: "0 %",
   },
   {
     _id: "54",
@@ -446,6 +500,7 @@ const ALL_PRODUCTS = [
     image: "/images/longbody.jpg",
     category: "bathroom-taps",
     brand: "Gravity",
+    offer: "0 %",
   },
   {
     _id: "55",
@@ -454,6 +509,7 @@ const ALL_PRODUCTS = [
     image: "/images/shortbody.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "56",
@@ -462,6 +518,7 @@ const ALL_PRODUCTS = [
     image: "/images/pvcshortbody.jpg",
     category: "pvc-bathroom-taps",
     brand: "CK",
+    offer: "0 %",
   },
   {
     _id: "57",
@@ -470,6 +527,7 @@ const ALL_PRODUCTS = [
     image: "/images/pvclongbody.jpg",
     category: "pvc-bathroom-taps",
     brand: "CK",
+    offer: "0 %",
   },
 
   // PVC TANK
@@ -481,6 +539,7 @@ const ALL_PRODUCTS = [
       "https://5.imimg.com/data5/SELLER/Default/2023/12/367319833/RD/XY/LR/15564909/3-layer-water-tank-eco-500x500.jpg",
     category: "pvc-tanks",
     brand: "Aplapollo NEO",
+    offer: "0 %",
   },
   {
     _id: "59",
@@ -489,6 +548,7 @@ const ALL_PRODUCTS = [
     image: "/images/tank.jpg",
     category: "pvc-tanks",
     brand: "Aplapollo NEO",
+    offer: "0 %",
   },
   //accessories
   {
@@ -498,6 +558,7 @@ const ALL_PRODUCTS = [
     image: "/images/pvccon.jpg",
     category: "accessories",
     brand: "Plasto",
+    offer: "0 %",
   },
   {
     _id: "61",
@@ -506,6 +567,7 @@ const ALL_PRODUCTS = [
     image: "/images/jali.jpg",
     category: "accessories",
     brand: "Vistro",
+    offer: "0 %",
   },
   {
     _id: "62",
@@ -514,6 +576,7 @@ const ALL_PRODUCTS = [
     image: "/images/cutjali.jpg",
     category: "accessories",
     brand: "Vistro",
+    offer: "0 %",
   },
   {
     _id: "63",
@@ -522,6 +585,7 @@ const ALL_PRODUCTS = [
     image: "/images/extension.jpg",
     category: "accessories",
     brand: "Vistro",
+    offer: "0 %",
   },
   {
     _id: "64",
@@ -530,6 +594,7 @@ const ALL_PRODUCTS = [
     image: "/images/dics.jpg",
     category: "accessories",
     brand: "Vistro",
+    offer: "0 %",
   },
   {
     _id: "65",
@@ -538,6 +603,7 @@ const ALL_PRODUCTS = [
     image: "/images/pillar.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "66",
@@ -546,6 +612,7 @@ const ALL_PRODUCTS = [
     image: "/images/conseal.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "67",
@@ -554,6 +621,7 @@ const ALL_PRODUCTS = [
     image: "https://m.media-amazon.com/images/I/61-3SXpEOIL.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "68",
@@ -562,6 +630,7 @@ const ALL_PRODUCTS = [
     image: "/images/damru-washbasin.png",
     category: "washbasin",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "69",
@@ -570,6 +639,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash14.jpeg",
     category: "washbasin",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "70",
@@ -578,6 +648,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash13.jpeg",
     category: "washbasin",
     brand: "Vikson",
+    offer: "0 %",
   },
   {
     _id: "71",
@@ -586,6 +657,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash12.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "72",
@@ -594,6 +666,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash11.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "73",
@@ -602,6 +675,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash10.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "74",
@@ -610,6 +684,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash9.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "75",
@@ -618,6 +693,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash8.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "76",
@@ -626,6 +702,7 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash7.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "77",
@@ -634,22 +711,25 @@ const ALL_PRODUCTS = [
     image: "/washbasin/wash6.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "78",
     name: "VANITY PU-2530",
-  price: "Negotiable",
+    price: "Negotiable",
     image: "/washbasin/wash5.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "79",
     name: "VANITY HD-5005",
-price: "Negotiable",
+    price: "Negotiable",
     image: "/washbasin/wash4.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "80",
@@ -658,14 +738,16 @@ price: "Negotiable",
     image: "/washbasin/wash3.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "81",
     name: "VANITY PU-2520",
-price: "Negotiable",
+    price: "Negotiable",
     image: "/washbasin/wash2.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
   {
     _id: "82",
@@ -674,6 +756,7 @@ price: "Negotiable",
     image: "/washbasin/wash1.jpeg",
     category: "washbasin",
     brand: "marble",
+    offer: "30% OFF",
   },
 ];
 
