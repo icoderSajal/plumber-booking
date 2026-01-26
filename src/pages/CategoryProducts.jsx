@@ -338,7 +338,7 @@ const ALL_PRODUCTS = [
   {
     _id: "37",
     name: "Wash Basin 24 × 18",
-    price: 1999,
+    price: 2200,
     image: "/images/washbasinwithpedestal.jpg",
     category: "washbasin",
     brand: "Aquatop",
@@ -347,7 +347,7 @@ const ALL_PRODUCTS = [
   {
     _id: "38",
     name: "Wash Basin 24 × 18",
-    price: 2299,
+    price: 2999,
     image: "/images/cera.jpg",
     category: "washbasin",
     brand: "Aquatop",
@@ -626,7 +626,7 @@ const ALL_PRODUCTS = [
   {
     _id: "68",
     name: "Single Suit",
-    price: 3099,
+    price: 6000,
     image: "/images/damru-washbasin.png",
     category: "washbasin",
     brand: "Vikson",
@@ -635,7 +635,7 @@ const ALL_PRODUCTS = [
   {
     _id: "69",
     name: "TABLE TOP ZXTT/576",
-    price: 7499,
+    price: 9999,
     image: "/washbasin/wash14.jpeg",
     category: "washbasin",
     brand: "Vikson",
@@ -766,9 +766,11 @@ const CategoryProducts = () => {
 
   useEffect(() => {
     const filteredProducts = ALL_PRODUCTS.filter(
-      (product) => product.category === category,
-    );
-
+      (p) => p.category === category,
+    ).map((p) => ({
+      ...p,
+      discount: p.category === "washbasin" ? 30 : 0,
+    }));
     setProducts(filteredProducts);
   }, [category]);
 
