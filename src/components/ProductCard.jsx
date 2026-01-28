@@ -80,7 +80,7 @@ const ProductCard = ({ product }) => {
   return (
     <Link
       to={`/product/${product._id}`}
-      className="mt-3 inline-block w-full text-center bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
+      className="mt-3 inline-block w-full text-center bg-green-50 text-white py-2 rounded-lg hover:bg-green-700 transition"
     >
       <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4 relative">
         {hasDiscount && (
