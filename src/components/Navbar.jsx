@@ -29,14 +29,15 @@ const Navbar = () => {
           {/* <Link to="/products" className="hover:text-blue-600">
             Products
           </Link> */}
-          <Link to="/contact" className="hover:text-blue-600">
-            Contact
-          </Link>
+
           <Link to="/about" className="hover:text-blue-600">
             About
           </Link>
           <Link to="/complaints" className="hover:text-blue-600">
             Complains
+          </Link>
+          <Link to="/contact" className="hover:text-blue-600">
+            Contact
           </Link>
           {/* <Link to="/admin" className="hover:text-blue-600">
             Dashboard
@@ -74,13 +75,6 @@ const Navbar = () => {
               </Link>
 
               <Link
-                to="/contact"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-blue-600"
-              >
-                Contact
-              </Link>
-              <Link
                 to="/about"
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-blue-600"
@@ -97,6 +91,13 @@ const Navbar = () => {
               </Link>
               <Link to="/complaints" className="hover:text-blue-600">
                 Complains
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-blue-600"
+              >
+                Contact
               </Link>
             </div>
           </div>
