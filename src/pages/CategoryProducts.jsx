@@ -338,7 +338,7 @@ const ALL_PRODUCTS = [
   {
     _id: "37",
     name: "Wash Basin 24 × 18",
-    price: 2200,
+    price: 2700,
     image: "/images/washbasinwithpedestal.jpg",
     category: "washbasin",
     brand: "Aquatop",
@@ -347,7 +347,7 @@ const ALL_PRODUCTS = [
   {
     _id: "38",
     name: "Wash Basin 24 × 18",
-    price: 2999,
+    price: 4999,
     image: "/images/cera.jpg",
     category: "washbasin",
     brand: "Aquatop",
@@ -365,7 +365,7 @@ const ALL_PRODUCTS = [
   {
     _id: "40",
     name: "Table Top Wash Basin",
-    price: 5299,
+    price: 8299,
     image: "/images/table.png",
     category: "washbasin",
     brand: "Cera",
@@ -698,7 +698,7 @@ const ALL_PRODUCTS = [
   {
     _id: "76",
     name: "TABLE TOP 1238WG9",
-    price: 5300,
+    price: 8000,
     image: "/washbasin/wash7.jpeg",
     category: "washbasin",
     brand: "marble",
@@ -716,7 +716,7 @@ const ALL_PRODUCTS = [
   {
     _id: "78",
     name: "VANITY PU-2530",
-    price: "Negotiable",
+    price: "10500",
     image: "/washbasin/wash5.jpeg",
     category: "washbasin",
     brand: "marble",
@@ -725,7 +725,7 @@ const ALL_PRODUCTS = [
   {
     _id: "79",
     name: "VANITY HD-5005",
-    price: "Negotiable",
+    price: "10500",
     image: "/washbasin/wash4.jpeg",
     category: "washbasin",
     brand: "marble",
@@ -734,7 +734,7 @@ const ALL_PRODUCTS = [
   {
     _id: "80",
     name: "VANITY PU-2516",
-    price: "Negotiable",
+    price: "10500",
     image: "/washbasin/wash3.jpeg",
     category: "washbasin",
     brand: "marble",
@@ -743,7 +743,7 @@ const ALL_PRODUCTS = [
   {
     _id: "81",
     name: "VANITY PU-2520",
-    price: "Negotiable",
+    price: "10500",
     image: "/washbasin/wash2.jpeg",
     category: "washbasin",
     brand: "marble",
@@ -752,7 +752,7 @@ const ALL_PRODUCTS = [
   {
     _id: "82",
     name: "VANITY PU-2410 BLUE B",
-    price: "Negotiable",
+    price: "10500",
     image: "/washbasin/wash1.jpeg",
     category: "washbasin",
     brand: "marble",
