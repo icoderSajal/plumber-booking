@@ -3,6 +3,12 @@ import { CheckCircle, Phone } from "lucide-react";
 
 const plumbers = [
   {
+    name: "Dharajeet Singh",
+    image: "/plumber.png",
+    mobile: "8754412356",
+    experience: "15 Years Experience",
+  },
+  {
     name: "Umesh Kumar Sharma",
     image: "/plumber.png",
     mobile: "9105639092",
@@ -25,6 +31,24 @@ const plumbers = [
     image: "/plumber.png",
     mobile: "8057187801",
     experience: "6 Years Experience",
+  },
+  {
+    name: "Harish Kumar",
+    image: "/plumber.png",
+    mobile: "8753307090",
+    experience: "10 Years Experience",
+  },
+  {
+    name: "Shiva",
+    image: "/plumber.png",
+    mobile: "9696248883",
+    experience: "4 Years Experience",
+  },
+  {
+    name: "Durgesh Yadav",
+    image: "/plumber.png",
+    mobile: "8218566367",
+    experience: "8 Years Experience",
   },
 ];
 

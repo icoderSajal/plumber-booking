@@ -13,8 +13,9 @@ const CategoryProducts = () => {
       (p) => p.category === category,
     ).map((p) => ({
       ...p,
-      discount: p.category === "washbasin" ? 30 : 0,
+      discount: p.category === "washbasin" || p.category === "toilet" ? 30 : 0,
     }));
+
     setProducts(filteredProducts);
   }, [category]);
 

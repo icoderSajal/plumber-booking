@@ -407,7 +407,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "45",
     name: "Two Piece English Toilet Seat",
-    price: 2799,
+    price: 3499,
     image: "/images/west1.jpg",
     category: "toilet",
     brand: "Aquatop",
@@ -426,11 +426,11 @@ export const ALL_PRODUCTS = [
   {
     _id: "47",
     name: "Wall Hung Toilet Seat",
-    price: 14599,
+    price: "14599",
     image: "/images/wallhung.jpg",
     category: "toilet",
     brand: "Jaquar",
-    offer: "0 %",
+    offer: "30% OFF",
   },
 
   // BATHROOM TAPS
