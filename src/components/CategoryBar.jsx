@@ -36,7 +36,7 @@ const categories = [
     iconColor: "text-purple-600",
   },
   {
-    name: "Toilets",
+    name: "Toilet Seats",
     icon: <FaToilet />,
     link: "/category/toilet",
     bg: "bg-red-50",
