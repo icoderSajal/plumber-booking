@@ -926,7 +926,7 @@ const ProductDetails = () => {
 
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
-        <p className="text-sm text-gray-500 mb-6">
+        <p className="text-lg text-gray-500 mb-6">
           <Link to="/" className="hover:underline">
             Home
           </Link>{" "}
@@ -938,17 +938,32 @@ const ProductDetails = () => {
             {product.category.replaceAll("-", " ")}
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-gray-700 font-medium">{product.name}</span>
+          <span className="text-green-600 font-medium">{product.name}</span>
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Image */}
-          <div className="border rounded-lg p-6 bg-white">
+          {/* <div className="border rounded-lg p-6 bg-white">
             <img
               src={product.image}
               alt={product.name}
               className="w-full h-80 object-contain"
             />
+          </div> */}
+
+          {/* Image */}
+          <div className="border rounded-lg p-6 bg-white overflow-hidden group">
+            <div className="relative w-full h-80 overflow-hidden rounded-lg">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-contain transform transition-transform duration-300 ease-in-out group-hover:scale-125 cursor-zoom-in"
+              />
+            </div>
+
+            <p className="text-center text-sm text-gray-500 mt-3">
+              Hover to zoom
+            </p>
           </div>
 
           {/* Details */}
