@@ -7,6 +7,7 @@ import Carousel from "../components/Carousel";
 import CustomerReviews from "../components/CustomerReviews";
 import { Helmet } from "react-helmet-async";
 import OurPlumbers from "../components/OurPlumbers";
+import BrandsWeDealWith from "../components/BrandsWeDealWith";
 
 const Home = () => {
   return (
@@ -22,8 +23,10 @@ const Home = () => {
       <CategoryBar />
       <Carousel />
       <Hero />
+      <BrandsWeDealWith />
       <OurPlumbers />
       <Stats />
+
       <CustomerReviews />
       <Footer />
     </>
