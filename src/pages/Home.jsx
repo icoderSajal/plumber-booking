@@ -23,11 +23,12 @@ const Home = () => {
       <CategoryBar />
       <Carousel />
       <Hero />
-      <BrandsWeDealWith />
+
       <OurPlumbers />
       <Stats />
 
       <CustomerReviews />
+      <BrandsWeDealWith />
       <Footer />
     </>
   );
