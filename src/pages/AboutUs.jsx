@@ -45,9 +45,9 @@ const AboutUs = () => {
             className="grid md:grid-cols-2 gap-12 items-center"
           >
             <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952"
+              src="logo.png"
               alt="Plumbing Service"
-              className="rounded-xl shadow-md w-full h-[320px] object-cover"
+              className="rounded-xl shadow-md w-full h-[420px] object-cover"
             />
 
             <div>
