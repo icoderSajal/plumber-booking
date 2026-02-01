@@ -906,4 +906,53 @@ export const ALL_PRODUCTS = [
     brand: "Intactware",
     offer: "30% OFF",
   },
+  {
+    _id: "100",
+    name: "ANGLE VALVE PVC",
+    price: "90",
+    image:
+      "https://m.media-amazon.com/images/I/31ZFexfD6eL._AC_UF1000,1000_QL80_.jpg",
+    category: "pvc-bathroom-taps",
+    brand: "CK",
+    offer: "0",
+  },
+  {
+    _id: "101",
+    name: "2 WAY BIB COCK PVC",
+    price: "200",
+    image: "https://m.media-amazon.com/images/I/71fEFcXZgtL._SX679_.jpg",
+    category: "pvc-bathroom-taps",
+    brand: "CK",
+    offer: "0",
+  },
+  {
+    _id: "102",
+    name: "2 WAY ANGLE VALVE PVC",
+    price: "200",
+    image:
+      "https://m.media-amazon.com/images/I/31c1qHjmwQL._AC_UF1000,1000_QL80_.jpg",
+    category: "pvc-bathroom-taps",
+    brand: "CK",
+    offer: "0",
+  },
+  {
+    _id: "101",
+    name: "SINK COCK PVC",
+    price: "200",
+    image:
+      "https://5.imimg.com/data5/SELLER/Default/2023/4/300735347/HJ/CK/FQ/37637234/dsc-0032.png",
+    category: "pvc-bathroom-taps",
+    brand: "CK",
+    offer: "0",
+  },
+  {
+    _id: "101",
+    name: "Swan Neck PVC",
+    price: "200",
+    image:
+      "https://5.imimg.com/data5/UH/XW/HX/SELLER-24820198/polo-swan-neck-pillar-cock-1000x1000.jpg",
+    category: "pvc-bathroom-taps",
+    brand: "CK",
+    offer: "0",
+  },
 ];
