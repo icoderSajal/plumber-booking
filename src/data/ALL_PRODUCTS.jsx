@@ -936,7 +936,7 @@ export const ALL_PRODUCTS = [
     offer: "0",
   },
   {
-    _id: "101",
+    _id: "103",
     name: "SINK COCK PVC",
     price: "200",
     image:
@@ -946,11 +946,20 @@ export const ALL_PRODUCTS = [
     offer: "0",
   },
   {
-    _id: "101",
+    _id: "104",
     name: "Swan Neck PVC",
     price: "200",
     image:
       "https://5.imimg.com/data5/UH/XW/HX/SELLER-24820198/polo-swan-neck-pillar-cock-1000x1000.jpg",
+    category: "pvc-bathroom-taps",
+    brand: "CK",
+    offer: "0",
+  },
+  {
+    _id: "105",
+    name: "PVC Pillar Cock",
+    price: "190",
+    image: "/images/pvcpillar.jpg",
     category: "pvc-bathroom-taps",
     brand: "CK",
     offer: "0",
