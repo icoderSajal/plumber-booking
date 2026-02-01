@@ -337,7 +337,7 @@ export const ALL_PRODUCTS = [
     image: "/images/washbasinwithpedestal.jpg",
     category: "washbasin",
     brand: "Aquatop",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "38",
@@ -346,7 +346,7 @@ export const ALL_PRODUCTS = [
     image: "/images/cera.jpg",
     category: "washbasin",
     brand: "Aquatop",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "39",
@@ -354,8 +354,8 @@ export const ALL_PRODUCTS = [
     price: 1899,
     image: "/images/washbasin.png",
     category: "washbasin",
-    brand: "Cera",
-    offer: "0 %",
+    brand: "Aquatop",
+    offer: "30% OFF",
   },
   {
     _id: "40",
@@ -363,8 +363,8 @@ export const ALL_PRODUCTS = [
     price: 8299,
     image: "/images/table.png",
     category: "washbasin",
-    brand: "Cera",
-    offer: "0 %",
+    brand: "Aquatop",
+    offer: "30% OFF",
   },
   {
     _id: "41",
@@ -372,8 +372,8 @@ export const ALL_PRODUCTS = [
     price: 5599,
     image: "/images/single.jpg",
     category: "washbasin",
-    brand: "Cera",
-    offer: "0 %",
+    brand: "Aquatop",
+    offer: "30% OFF",
   },
   {
     _id: "42",
@@ -382,7 +382,7 @@ export const ALL_PRODUCTS = [
     image: "/images/vanity.jpg",
     category: "washbasin",
     brand: "Jaquar",
-    offer: "0 %",
+    offer: "30% OFF",
   },
 
   // TOILET
@@ -393,7 +393,7 @@ export const ALL_PRODUCTS = [
     image: "/images/indian.jpg",
     category: "toilet",
     brand: "Cava",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "44",
@@ -402,7 +402,7 @@ export const ALL_PRODUCTS = [
     image: "/images/indian.jpg",
     category: "toilet",
     brand: "Cava",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "45",
@@ -411,7 +411,7 @@ export const ALL_PRODUCTS = [
     image: "/images/west1.jpg",
     category: "toilet",
     brand: "Aquatop",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "46",
@@ -420,7 +420,7 @@ export const ALL_PRODUCTS = [
     image: "/images/west2.png",
     category: "toilet",
     brand: "Aquatop",
-    offer: "0 %",
+    offer: "30% OFF",
   },
 
   {
@@ -616,7 +616,7 @@ export const ALL_PRODUCTS = [
     image: "https://m.media-amazon.com/images/I/61-3SXpEOIL.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "68",
@@ -625,7 +625,7 @@ export const ALL_PRODUCTS = [
     image: "/images/damru-washbasin.png",
     category: "washbasin",
     brand: "Vikson",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "69",
@@ -634,7 +634,7 @@ export const ALL_PRODUCTS = [
     image: "/washbasin/wash14.jpeg",
     category: "washbasin",
     brand: "Vikson",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "70",
@@ -643,7 +643,7 @@ export const ALL_PRODUCTS = [
     image: "/washbasin/wash13.jpeg",
     category: "washbasin",
     brand: "Vikson",
-    offer: "0 %",
+    offer: "30% OFF",
   },
   {
     _id: "71",
@@ -769,7 +769,7 @@ export const ALL_PRODUCTS = [
     image: "/images/heathfaucet.jpg",
     category: "toilet",
     brand: "alton",
-    offer: "0",
+    offer: "30% OFF",
   },
   {
     _id: "85",
@@ -778,7 +778,7 @@ export const ALL_PRODUCTS = [
     image: "/images/cistern.jpg",
     category: "toilet",
     brand: "alton",
-    offer: "0",
+    offer: "30% OFF",
   },
   {
     _id: "86",
@@ -787,7 +787,7 @@ export const ALL_PRODUCTS = [
     image: "/images/seatcover.jpg",
     category: "toilet",
     brand: "ZOTO",
-    offer: "0",
+    offer: "30% OFF",
   },
   {
     _id: "87",
@@ -877,6 +877,24 @@ export const ALL_PRODUCTS = [
     image: "/images/chinimurga.jpg",
     category: "washbasin",
     brand: "cava",
+    offer: "30 OFF",
+  },
+  {
+    _id: "97",
+    name: "Cistern Short Bend",
+    price: "200",
+    image: "/images/shortbend.jpg",
+    category: "accessories",
+    brand: "plasto",
+    offer: "0",
+  },
+  {
+    _id: "98",
+    name: "Cistern Long Bend",
+    price: "450",
+    image: "/images/longbend.jpg",
+    category: "accessories",
+    brand: "plasto",
     offer: "0",
   },
 ];
