@@ -811,7 +811,7 @@ export const ALL_PRODUCTS = [
     _id: "89",
     name: "Brass Check Valve 3/4 Inch",
     price: "350",
-    image: "/images/checkball.jpg",
+    image: "/images/brasscheckwall.jpg",
     category: "bathroom-taps",
     brand: "Gravity",
     offer: "0",

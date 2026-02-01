@@ -95,7 +95,7 @@ const AboutUs = () => {
                   whileHover={{ y: -6 }}
                   className="bg-gray-50 rounded-xl p-6 shadow-sm text-center"
                 >
-                  <FaTools className="text-blue-600 text-3xl mx-auto mb-4" />
+                  <FaBath className="text-blue-600 text-3xl mx-auto mb-4" />
                   <p className="font-medium text-gray-700">{item}</p>
                 </motion.div>
               ))}
@@ -145,7 +145,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <p className="text-blue-200 text-sm">Owner: Sajal Bajaj</p>
+            <p className="text-blue-200 text-sm">Owner : Sajal Bajaj</p>
           </div>
         </section>
       </div>
