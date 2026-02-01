@@ -1005,6 +1005,15 @@ const ProductDetails = () => {
               residential and commercial use. Durable material, easy
               installation, and long-lasting performance.
             </p>
+            {/* Delivery Note */}
+            <div className="mt-5 bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <p className="text-sm text-blue-800">
+                <span className="font-semibold">Delivery Information:</span>{" "}
+                This product is available for delivery{" "}
+                <span className="font-semibold">only within Bareilly city</span>
+                . For outside locations, please contact us for assistance.
+              </p>
+            </div>
 
             {/* Action Buttons */}
             <div className="mt-8 flex flex-wrap gap-4">

@@ -897,4 +897,13 @@ export const ALL_PRODUCTS = [
     brand: "plasto",
     offer: "0",
   },
+  {
+    _id: "99",
+    name: "American Jet Spray With 1 Meter Flexible Tube",
+    price: "350",
+    image: "/images/amjet.jpg",
+    category: "toilet",
+    brand: "Intactware",
+    offer: "30% OFF",
+  },
 ];
