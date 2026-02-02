@@ -45,7 +45,7 @@ const AboutUs = () => {
             className="grid md:grid-cols-2 gap-12 items-center"
           >
             <img
-              src="logo.png"
+              src="logo2.png"
               alt="Plumbing Service"
               className="rounded-xl shadow-md w-full h-[420px] object-cover"
             />
@@ -124,7 +124,7 @@ const AboutUs = () => {
               className="bg-white rounded-full p-4 shadow-lg mb-6"
             >
               <img
-                src="/logo.png"
+                src="/logo2.png"
                 alt="Abhiyaan Logo"
                 className="w-32 h-32 rounded-full object-cover"
               />
