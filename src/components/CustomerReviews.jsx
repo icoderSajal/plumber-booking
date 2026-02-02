@@ -9,10 +9,9 @@ const reviews = [
       "Excellent plumbing service. Quick response and very professional work. Highly recommended!",
   },
   {
-    name: "Anita Verma",
+    name: "Sonu Saxena",
     rating: 4,
-    review:
-      "Very polite staff and clean work. Fixed my leakage issue.",
+    review: "Very polite staff and clean work. Fixed my leakage issue.",
   },
   {
     name: "Mohit Jain",

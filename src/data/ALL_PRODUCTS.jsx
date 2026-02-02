@@ -964,4 +964,13 @@ export const ALL_PRODUCTS = [
     brand: "CK",
     offer: "0",
   },
+  {
+    _id: "106",
+    name: "Aari Blade",
+    price: "10",
+    image: "/images/blade.png",
+    category: "accessories",
+    brand: "CK",
+    offer: "0",
+  },
 ];
