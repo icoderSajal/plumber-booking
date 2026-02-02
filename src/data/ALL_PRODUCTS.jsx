@@ -919,7 +919,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "101",
     name: "2 WAY BIB COCK PVC",
-    price: "200",
+    price: "250",
     image: "https://m.media-amazon.com/images/I/71fEFcXZgtL._SX679_.jpg",
     category: "pvc-bathroom-taps",
     brand: "CK",
@@ -928,7 +928,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "102",
     name: "2 WAY ANGLE VALVE PVC",
-    price: "200",
+    price: "250",
     image:
       "https://m.media-amazon.com/images/I/31c1qHjmwQL._AC_UF1000,1000_QL80_.jpg",
     category: "pvc-bathroom-taps",
