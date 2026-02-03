@@ -973,4 +973,22 @@ export const ALL_PRODUCTS = [
     brand: "CK",
     offer: "0",
   },
+  {
+    _id: "107",
+    name: "CPVC WALL VALVE 1 INCH",
+    price: "200",
+    image: "https://m.media-amazon.com/images/I/6145j6jxPsL._SL1500_.jpg",
+    category: "cpvc",
+    brand: "apollo",
+    offer: "0",
+  },
+  {
+    _id: "108",
+    name: "CPVC WALL VALVE 3/4 INCH",
+    price: "150",
+    image: "https://m.media-amazon.com/images/I/6145j6jxPsL._SL1500_.jpg",
+    category: "cpvc",
+    brand: "apollo",
+    offer: "0",
+  },
 ];
