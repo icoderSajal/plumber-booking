@@ -1107,4 +1107,13 @@ export const ALL_PRODUCTS = [
     brand: "marble",
     offer: "30% OFF",
   },
+  {
+    _id: "122",
+    name: "PVC Nozzle Tap",
+    price: 80,
+    image: "https://m.media-amazon.com/images/I/31E69kt+YhL._SL1000_.jpg",
+    category: "pvc-bathroom-taps",
+    brand: "CK",
+    offer: "0",
+  },
 ];
