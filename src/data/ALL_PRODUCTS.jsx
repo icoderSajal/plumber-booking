@@ -991,4 +991,64 @@ export const ALL_PRODUCTS = [
     brand: "apollo",
     offer: "0",
   },
+  {
+    _id: "109",
+    name: "CPVC SOLVENT 100 ML",
+    price: "210",
+    image:
+      "https://5.imimg.com/data5/SELLER/Default/2022/2/LR/YN/VM/119619158/pidilite-m-seal-pv-seal-cpvc-solvent-cement.jpg",
+    category: "cpvc",
+    brand: "m-seal",
+    offer: "0",
+  },
+  {
+    _id: "110",
+    name: "CPVC SOLVENT 50 ML",
+    price: "135",
+    image:
+      "https://5.imimg.com/data5/SELLER/Default/2022/2/LR/YN/VM/119619158/pidilite-m-seal-pv-seal-cpvc-solvent-cement.jpg",
+    category: "cpvc",
+    brand: "m-seal",
+    offer: "0",
+  },
+  {
+    _id: "111",
+    name: "CPVC SOLVENT TUBE",
+    price: "20",
+    image: "https://cdn.moglix.com/p/ue86mTIbEbXmP-xxlarge.jpg",
+    category: "cpvc",
+    brand: "m-seal",
+    offer: "0",
+  },
+
+  {
+    _id: "112",
+    name: "PVC SOLVENT TUBE",
+    price: "20",
+    image:
+      "https://5.imimg.com/data5/ANDROID/Default/2023/8/332469298/AZ/UC/HO/70383046/product-jpeg-500x500.jpg",
+    category: "pvc",
+    brand: "m-seal",
+    offer: "0",
+  },
+  {
+    _id: "113",
+    name: "PVC SOLVENT 50 ML",
+    price: "75",
+    image:
+      "https://imagesm.plexussquare.in/HARDWAREMART/Images/29-07-2025/1753769360884.jpg",
+    category: "pvc",
+    brand: "m-seal",
+    offer: "0",
+  },
+  {
+    _id: "114",
+    name: "PVC SOLVENT 100 ML",
+    price: "100",
+    image:
+      "https://imagesm.plexussquare.in/HARDWAREMART/Images/29-07-2025/1753769360884.jpg",
+    category: "pvc",
+    brand: "m-seal",
+    offer: "0",
+  },
 ];
