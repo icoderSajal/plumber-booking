@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import CategoryBar from "../components/CategoryBar";
 import Carousel from "../components/Carousel";
 import CustomerReviews from "../components/CustomerReviews";
-
 import OurPlumbers from "../components/OurPlumbers";
 import BrandsWeDealWith from "../components/BrandsWeDealWith";
 
@@ -14,12 +13,12 @@ const Home = () => {
     <>
       <Navbar />
       <CategoryBar />
-      <Carousel />
-      <Hero />
 
+      <Carousel />
+
+      <Hero />
       <OurPlumbers />
       <Stats />
-
       <CustomerReviews />
       <BrandsWeDealWith />
       <Footer />

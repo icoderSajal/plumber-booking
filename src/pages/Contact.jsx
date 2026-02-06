@@ -3,6 +3,7 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaPhoneAlt, FaWhatsapp, FaStore, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const Contact = () => {
       setLoading(true);
       const { data } = await axios.post(
         "https://plumber-backend.onrender.com/api/queries/create",
-        formData
+        formData,
       );
 
       if (data.success) {
@@ -95,16 +96,16 @@ const Contact = () => {
 
               <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
                 <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
-                  PVC & CPVC Pipes
+                  <Link to="/category/pvc">PVC & CPVC Pipes</Link>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
-                  Bathroom Fittings
+                  <Link to="/category/bathroom-taps">Bathroom Fittings</Link>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
-                  Wash Basins
+                  <Link to="/category/washbasin">Wash Basins</Link>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 text-center font-medium">
-                  Plumbing Service
+                  <Link to="/book-plumber"> Plumbing Service</Link>
                 </div>
               </div>
             </div>

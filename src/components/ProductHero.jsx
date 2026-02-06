@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useTexture, Environment } from "@react-three/drei";
 import { useRef } from "react";
@@ -32,7 +31,7 @@ function ProductCard() {
 
   return (
     <mesh ref={ref} castShadow>
-      <boxGeometry args={[2.8, 4.4, 0.35]} />
+      <boxGeometry args={[2.0, 2.0, 0.15]} />
       <meshPhysicalMaterial
         map={texture}
         roughness={0.25}
@@ -110,29 +109,80 @@ const ProductHero = () => {
   );
 };
 
-const Hero = () => {
-  const navigate = useNavigate();
+export default ProductHero;
 
-  return (
-    <section className="bg-blue-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-4">
-          Professional Plumbing Services
-        </h2>
-
-        <p className="text-gray-600 mb-6">
-          Trusted plumbers for home and commercial needs
-        </p>
-
-        <button
-          onClick={() => navigate("/book-plumber")}
-          className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
-        >
-          Book a Plumber
-        </button>
-      </div>
-    </section>
-  );
+/* =======================
+   STYLES
+======================= */
+const styles = {
+  section: {
+    minHeight: "60vh",
+    background: "#ffffff",
+    display: "flex",
+    alignItems: "center",
+    padding: "100px 20px",
+  },
+  wrapper: {
+    maxWidth: "1200px",
+    margin: "auto",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "60px",
+    alignItems: "center",
+  },
+  content: {
+    fontFamily: "Inter, sans-serif",
+    maxWidth: "520px",
+  },
+  kicker: {
+    textTransform: "uppercase",
+    letterSpacing: "1.6px",
+    fontSize: "12px",
+    color: "#6b7280",
+    marginBottom: "14px",
+  },
+  title: {
+    fontSize: "48px",
+    lineHeight: "1.15",
+    fontWeight: "600",
+    color: "#111827",
+  },
+  desc: {
+    marginTop: "22px",
+    fontSize: "17px",
+    lineHeight: "1.7",
+    color: "#374151",
+  },
+  list: {
+    marginTop: "26px",
+    paddingLeft: "18px",
+    lineHeight: "1.9",
+    color: "#111827",
+  },
+  button: {
+    marginTop: "34px",
+    padding: "14px 36px",
+    borderRadius: "32px",
+    border: "1px solid #111827",
+    background: "transparent",
+    fontSize: "14px",
+    cursor: "pointer",
+  },
+  canvas: {
+    width: "100%",
+    height: "520px",
+    borderRadius: "24px",
+    background: "linear-gradient(145deg,#f9fafb,#eef2f7)",
+    boxShadow: "0 50px 100px rgba(0,0,0,0.12)",
+  },
 };
 
-export default Hero;
+/* =======================
+   MOBILE RESPONSIVE
+======================= */
+if (typeof window !== "undefined" && window.innerWidth < 768) {
+  styles.wrapper.gridTemplateColumns = "1fr";
+  styles.wrapper.gap = "40px";
+  styles.canvas.height = "420px";
+  styles.title.fontSize = "36px";
+}

@@ -8,7 +8,7 @@ const AboutUs = () => {
       <Navbar />
       <div className="bg-gray-50 min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-blue-600 text-white">
+        <section className="relative bg-blue-900 text-white">
           <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -17,6 +17,9 @@ const AboutUs = () => {
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
                 Abhiyaan Sanitary & Plumber Service
+              </h1>
+              <h1 className="text-3xl md:text-xl font-bold mb-4">
+                Modern Sanitary & PVC Bathroom Solutions
               </h1>
               <p className="text-lg text-blue-100 leading-relaxed">
                 Trusted sanitary products and professional plumbing solutions
@@ -28,9 +31,9 @@ const AboutUs = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              src="/banner.png"
+              src="/poster.png"
               alt="Sanitary Bathroom"
-              className="rounded-xl shadow-lg w-full h-[280px] object-cover"
+              className="rounded-xl shadow-lg w-full h-[380px] object-cover"
             />
           </div>
         </section>
