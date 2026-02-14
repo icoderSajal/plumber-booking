@@ -463,7 +463,7 @@ export const ALL_PRODUCTS = [
   },
   {
     _id: "51",
-    name: "Nozzle Cock",
+    name: "Washing Nozzle Cock",
     price: 599,
     image: "/images/washtab.jpg",
     category: "bathroom-taps",
@@ -1117,7 +1117,5 @@ export const ALL_PRODUCTS = [
     offer: "0",
   },
 ];
-
-
 
 // Best PVC & CPVC pipes at best price in bareilly
