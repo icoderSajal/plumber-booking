@@ -53,3 +53,18 @@ h3 {
 .animate-slideDown {
     animation: slideDown 0.25s ease-out;
 }
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
