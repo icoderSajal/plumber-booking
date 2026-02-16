@@ -437,7 +437,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "48",
     name: "Swan Neck 9 Inch Bend",
-    price: 1299,
+    price: 799,
     image: "/images/swantab.jpg",
     category: "bathroom-taps",
     brand: "Birla",
@@ -446,7 +446,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "49",
     name: "Sink Cock 9 Inch Bend",
-    price: 1399,
+    price: 799,
     image: "/images/sinktab.jpg",
     category: "bathroom-taps",
     brand: "Country Gold",
