@@ -1116,6 +1116,15 @@ export const ALL_PRODUCTS = [
     brand: "CK",
     offer: "0",
   },
+  {
+    _id: "123",
+    name: "Brass Handle Valve",
+    price: 450,
+    image: "/images/nozeltab.jpg",
+    category: "bathroom-taps",
+    brand: "Vikson",
+    offer: "0 %",
+  },
 ];
 
 // Best PVC & CPVC pipes at best price in bareilly

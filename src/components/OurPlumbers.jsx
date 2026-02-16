@@ -62,6 +62,12 @@ const plumbers = [
     mobile: "7302603087",
     experience: "6 Years Experience",
   },
+  {
+    name: "Puran Morya",
+    image: "/plumber.png",
+    mobile: "6395558905",
+    experience: "10 Years Experience",
+  },
 ];
 
 // Mask mobile number → XXXXXX1234
