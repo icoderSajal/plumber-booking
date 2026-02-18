@@ -178,7 +178,7 @@ const Footer = () => {
           </div>
 
           {/* Map Image Preview */}
-          <a
+          {/* <a
             href="https://www.google.com/maps/place/Sanjay+Nagar,+Durga+Nagar,+Bareilly"
             target="_blank"
             rel="noopener noreferrer"
@@ -188,7 +188,7 @@ const Footer = () => {
               alt="Location Map"
               className="rounded-lg border border-gray-700 mt-2 hover:scale-105 transition w-full h-32 object-cover"
             />
-          </a>
+          </a> */}
         </div>
       </div>
 
