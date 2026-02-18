@@ -7,12 +7,14 @@ import Carousel from "../components/Carousel";
 import CustomerReviews from "../components/CustomerReviews";
 import OurPlumbers from "../components/OurPlumbers";
 import BrandsWeDealWith from "../components/BrandsWeDealWith";
+import TopSection from "../components/TopSection";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <CategoryBar />
+      <TopSection />
 
       <Carousel />
 
