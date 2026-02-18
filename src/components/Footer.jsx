@@ -163,19 +163,46 @@ const Footer = () => {
             <span>abhiyaan@gmail.com</span>
           </div>
 
-          {/* Google Maps Clickable Address */}
-          <div className="flex items-center mb-2 text-gray-300">
-            <FaLocationArrow className="mr-2" />
+          {/* Address */}
+          <div className="flex items-start mb-3 text-gray-300">
+            <FaLocationArrow className="mr-2 mt-1" />
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Durga+Nagar+Bareilly+Uttar+Pradesh+India"
+              href="https://www.google.com/maps/search/?api=1&query=Sanjay+Nagar+Durga+Nagar+Near+Shive+General+Store+Bareilly+Uttar+Pradesh"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition"
             >
-              Durga Nagar, Bareilly, Uttar Pradesh
+              Sanjay Nagar, Durga Nagar Near Shive General Store, Bareilly,
+              Uttar Pradesh
             </a>
           </div>
+
+          {/* Map Image Preview */}
+          <a
+            href="https://www.google.com/maps/place/Sanjay+Nagar,+Durga+Nagar,+Bareilly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://www.google.com/maps/vt/data=PB!1m4!1m3!1i15!2i24576!3i16384!2m3!1e0!2sm!3i512!3m2!1sen!2sin"
+              alt="Location Map"
+              className="rounded-lg border border-gray-700 mt-2 hover:scale-105 transition w-full h-32 object-cover"
+            />
+          </a>
         </div>
+      </div>
+
+      {/* Embedded Google Map */}
+      <div className="w-full h-[300px] mt-6">
+        <iframe
+          title="Google Map Location"
+          src="https://maps.google.com/maps?q=Sanjay%20Nagar%20Durga%20Nagar%20Near%20Shive%20General%20Store%20Bareilly&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
       </div>
 
       <div className="bg-gray-900 text-gray-400 text-center text-sm py-4">
