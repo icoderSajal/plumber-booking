@@ -172,7 +172,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition"
             >
-              Sanjay Nagar, Durga Nagar Near Shive General Store, Bareilly,
+              Sanjay Nagar, Durga Nagar Near Shiva General Store, Bareilly,
               Uttar Pradesh
             </a>
           </div>
