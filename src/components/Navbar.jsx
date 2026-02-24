@@ -113,7 +113,7 @@ import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaHome, FaInfoCircle, FaPhoneAlt, FaTools } from "react-icons/fa";
-import { BiBorderRadius } from "react-icons/bi";
+import { GrTools } from "react-icons/gr";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -164,12 +164,12 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            to="/complaints"
+            to="/service"
             className={({ isActive }) =>
               `${baseLink} ${isActive ? activeLink : ""}`
             }
           >
-            <FaTools size={14} /> Complaints
+            <FaTools size={14} /> Services
           </NavLink>
 
           <NavLink
@@ -238,6 +238,13 @@ const Navbar = () => {
                 className="flex items-center gap-3 hover:text-blue-600 transition"
               >
                 <FaTools /> Complaints
+              </Link>
+              <Link
+                to="/service"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 hover:text-blue-600 transition"
+              >
+                <GrTools /> Services
               </Link>
 
               <Link

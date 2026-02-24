@@ -44,7 +44,7 @@ const ceramicProducts = [
 
 const Carousel = () => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <div className="mb-8 flex justify-between items-center">
