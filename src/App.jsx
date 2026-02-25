@@ -29,6 +29,7 @@ function App() {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/service" element={<RateList />} />
+        {/* <Route path="/complaints" element={<Complaints />} /> */}
 
         {/* Admin Pages (Nested under AdminLayout) */}
         <Route path="/admin" element={<AdminLayout />}>

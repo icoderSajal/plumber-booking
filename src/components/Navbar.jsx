@@ -232,13 +232,13 @@ const Navbar = () => {
                 <FaTools /> Book Plumber
               </Link>
 
-              <Link
+              {/* <Link
                 to="/complaints"
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center gap-3 hover:text-blue-600 transition"
               >
                 <FaTools /> Complaints
-              </Link>
+              </Link> */}
               <Link
                 to="/service"
                 onClick={() => setMenuOpen(false)}
