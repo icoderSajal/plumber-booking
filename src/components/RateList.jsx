@@ -1,25 +1,23 @@
 import React from "react";
-import {
-  FaTools,
-  FaFaucet,
-  FaWater,
-  FaWrench,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaFaucet, FaWhatsapp } from "react-icons/fa";
+import { PiEngineFill, PiBathtubFill } from "react-icons/pi";
+import { GiBrainLeak, GiWaterTank } from "react-icons/gi";
+
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Logo from "../assets/logo.png"; // your logo
+import { FaKitchenSet } from "react-icons/fa6";
 
 const services = [
-  { name: "बाथरूम फिटिंग", price: "₹5000 से शुरू", icon: <FaTools /> },
-  { name: "किचन फिटिंग", price: "₹3200 से शुरू", icon: <FaFaucet /> },
+  { name: "बाथरूम फिटिंग", price: "₹5000 से शुरू", icon: <PiBathtubFill /> },
+  { name: "किचन फिटिंग", price: "₹3200 से शुरू", icon: <FaKitchenSet /> },
   { name: "प्रति नल फिटिंग", price: "₹50", icon: <FaFaucet /> },
-  { name: "मोटर इंस्टॉलेशन", price: "₹500", icon: <FaWrench /> },
-  { name: "मोटर खोलना", price: "₹400", icon: <FaWrench /> },
-  { name: "पाइप लीकेज रिपेयर", price: "₹1500", icon: <FaTools /> },
-  { name: "500 लीटर टंकी इंस्टॉलेशन", price: "₹300", icon: <FaWater /> },
-  { name: "500 लीटर टंकी सफाई", price: "₹250", icon: <FaWater /> },
+  { name: "मोटर इंस्टॉलेशन", price: "₹500", icon: <PiEngineFill /> },
+  { name: "मोटर खोलना", price: "₹400", icon: <PiEngineFill /> },
+  { name: "पाइप लीकेज रिपेयर", price: "₹1500", icon: <GiBrainLeak /> },
+  { name: "500 लीटर टंकी इंस्टॉलेशन", price: "₹300", icon: <GiWaterTank /> },
+  { name: "500 लीटर टंकी सफाई", price: "₹250", icon: <GiWaterTank /> },
 ];
 
 const RateList = () => {
