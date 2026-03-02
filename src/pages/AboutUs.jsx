@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import { FaPhoneAlt, FaEnvelope, FaTools, FaBath } from "react-icons/fa";
-
+import CardBg from "../assets/businessCards.png";
 const AboutUs = () => {
   return (
     <>
