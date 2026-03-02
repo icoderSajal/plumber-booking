@@ -71,7 +71,7 @@ const plumbers = [
   },
   {
     name: "Raviendra Kumar",
-    image: "/plumber.png",
+    image: "/plumber05.jpeg",
     mobile: "6398811769",
     experience: "8 Years Experience",
   },
