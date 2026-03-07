@@ -8,12 +8,14 @@ import CustomerReviews from "../components/CustomerReviews";
 import OurPlumbers from "../components/OurPlumbers";
 import BrandsWeDealWith from "../components/BrandsWeDealWith";
 import TopSection from "../components/TopSection";
+import WhatsAppBooking from "../components/WhatsAppBooking";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <CategoryBar />
+      <WhatsAppBooking />
       <TopSection />
 
       <Carousel />

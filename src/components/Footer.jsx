@@ -91,6 +91,7 @@ import { Link } from "react-router-dom";
 import { FaLocationArrow, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Logo from "../assets/logo.png";
+import MapSection from "./MapSection";
 
 const Footer = () => {
   const hours = [
@@ -193,7 +194,7 @@ const Footer = () => {
       </div>
 
       {/* Embedded Google Map */}
-      <div className="w-full h-[300px] mt-6">
+      {/* <div className="w-full h-[300px] mt-6">
         <iframe
           title="Google Map Location"
           src="https://maps.google.com/maps?q=Sanjay%20Nagar%20Durga%20Nagar%20Near%20Shive%20General%20Store%20Bareilly&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -203,10 +204,9 @@ const Footer = () => {
           allowFullScreen=""
           loading="lazy"
         ></iframe>
-      </div>
-
-      <div className="bg-gray-900 text-gray-400 text-center text-sm py-4">
-        &copy; {new Date().getFullYear()} Abiyaan Sanitary. All rights reserved.
+      </div> */}
+      <div className="w-full h-[300px] mt-6">
+        <MapSection />
       </div>
     </footer>
   );
