@@ -17,9 +17,7 @@ const Home = () => {
       <TopSection />
 
       <Carousel />
-
       <Hero />
-
       <OurPlumbers />
       <Stats />
       <CustomerReviews />
