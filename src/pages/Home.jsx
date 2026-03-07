@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Navbar />
       <CategoryBar />
-      <WhatsAppBooking />
+
       <TopSection />
 
       <Carousel />
