@@ -15,9 +15,11 @@ import NotFound from "./pages/NotFound";
 import ProductDetails from "./pages/ProductDetails";
 import AboutUs from "./pages/AboutUs";
 import RateList from "./components/RateList";
+import WhatsAppButton from "./components/WhatsAppButton";
 function App() {
   return (
     <BrowserRouter>
+      <WhatsAppButton />
       <Routes>
         {/* Public Pages */}
         <Route path="/" element={<Home />} />
