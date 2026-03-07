@@ -429,7 +429,7 @@ export const ALL_PRODUCTS = [
     price: "14599",
     image: "/images/wallhung.jpg",
     category: "toilet",
-    brand: "Jaquar",
+    brand: "Aquatop",
     offer: "30% OFF",
   },
 
