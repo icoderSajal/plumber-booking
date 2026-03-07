@@ -159,14 +159,14 @@ const Hero = () => {
           <FaPhoneAlt /> Book Plumber
         </Link>
 
-        <Link
-          href="https://wa.me/918218566367"
-          className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600"
+        <a
+          href="https://wa.me/919205448629"
+          className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600 transition"
         >
           <FaWhatsapp /> WhatsApp
-        </Link>
+        </a>
       </div>
-    </section>
+    </section> 
   );
 };
 
