@@ -63,7 +63,7 @@ Phone: ${form.phone}%0A
 Service: ${form.service}%0A
 Location: ${form.location}`;
 
-    const url = `https://wa.me/9192054486297?text=${message}`;
+    const url = `https://wa.me/919205448629?text=${message}`;
 
     setTimeout(() => {
       window.open(url, "_blank");
