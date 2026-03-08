@@ -112,7 +112,13 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaHome, FaInfoCircle, FaPhoneAlt, FaTools } from "react-icons/fa";
+import {
+  FaHome,
+  FaInfoCircle,
+  FaPhoneAlt,
+  FaTools,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { GrTools } from "react-icons/gr";
 
 const Navbar = () => {
@@ -180,6 +186,14 @@ const Navbar = () => {
           >
             <FaPhoneAlt size={14} /> Contact
           </NavLink>
+          <NavLink
+            to="/whatappbooking"
+            className={({ isActive }) =>
+              `${baseLink} ${isActive ? activeLink : ""}`
+            }
+          >
+            <FaWhatsapp size={20} /> Whatsapp Booking
+          </NavLink>
         </div>
 
         {/* Mobile Button */}
@@ -232,13 +246,13 @@ const Navbar = () => {
                 <FaTools /> Book Plumber
               </Link>
 
-              {/* <Link
-                to="/complaints"
+              <Link
+                to="/whatappbooking"
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center gap-3 hover:text-blue-600 transition"
               >
-                <FaTools /> Complaints
-              </Link> */}
+                <FaWhatsapp /> Whatsapp Booking
+              </Link>
               <Link
                 to="/service"
                 onClick={() => setMenuOpen(false)}

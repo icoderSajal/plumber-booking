@@ -16,6 +16,7 @@ import ProductDetails from "./pages/ProductDetails";
 import AboutUs from "./pages/AboutUs";
 import RateList from "./components/RateList";
 import WhatsAppButton from "./components/WhatsAppButton";
+import WhatsAppBooking from "./components/WhatsAppBooking";
 function App() {
   return (
     <BrowserRouter>
@@ -31,6 +32,7 @@ function App() {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/service" element={<RateList />} />
+        <Route path="/whatappbooking" element={<WhatsAppBooking />} />
         {/* <Route path="/complaints" element={<Complaints />} /> */}
 
         {/* Admin Pages (Nested under AdminLayout) */}

@@ -6,6 +6,7 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 const WhatsAppBooking = () => {
   const [form, setForm] = useState({
@@ -71,113 +72,116 @@ Location: ${form.location}`;
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-r from-blue-50 to-blue-100">
-      <div className="max-w-lg mx-auto bg-white shadow-xl rounded-2xl p-8">
-        <h2 className="text-3xl font-bold text-center mb-2 text-gray-800">
-          Book Plumbing Service
-        </h2>
+    <>
+      <Navbar />
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div className="max-w-lg mx-auto bg-white shadow-xl rounded-2xl p-8">
+          <h2 className="text-3xl font-bold text-center mb-2 text-gray-800">
+            Book Plumbing Service
+          </h2>
 
-        <p className="text-center text-gray-500 mb-6">
-          Quick booking. Our plumber will contact you soon.
-        </p>
+          <p className="text-center text-gray-500 mb-6">
+            Quick booking. Our plumber will contact you soon.
+          </p>
 
-        <div className="space-y-4">
-          {/* Name */}
-          <div>
-            <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
-              <FaUser className="text-gray-400 mr-3" />
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                onChange={handleChange}
-                className="w-full p-3 outline-none"
-              />
+          <div className="space-y-4">
+            {/* Name */}
+            <div>
+              <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
+                <FaUser className="text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  onChange={handleChange}
+                  className="w-full p-3 outline-none"
+                />
+              </div>
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+              )}
             </div>
-            {errors.name && (
-              <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-            )}
-          </div>
 
-          {/* Phone */}
-          <div>
-            <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
-              <FaPhoneAlt className="text-gray-400 mr-3" />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Mobile Number"
-                onChange={handleChange}
-                className="w-full p-3 outline-none"
-              />
+            {/* Phone */}
+            <div>
+              <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
+                <FaPhoneAlt className="text-gray-400 mr-3" />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Mobile Number"
+                  onChange={handleChange}
+                  className="w-full p-3 outline-none"
+                />
+              </div>
+              {errors.phone && (
+                <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+              )}
             </div>
-            {errors.phone && (
-              <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
-            )}
-          </div>
 
-          {/* Service */}
-          <div>
-            <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
-              <FaTools className="text-gray-400 mr-3" />
-              <select
-                name="service"
-                onChange={handleChange}
-                className="w-full p-3 outline-none bg-transparent"
-              >
-                <option value="">Select Service</option>
-                <option>Pipe Leakage Repair</option>
-                <option>Bathroom Fitting</option>
-                <option>Kitchen Fitting</option>
-                <option>Tank Cleaning</option>
-                <option>Tap Installation</option>
-              </select>
+            {/* Service */}
+            <div>
+              <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
+                <FaTools className="text-gray-400 mr-3" />
+                <select
+                  name="service"
+                  onChange={handleChange}
+                  className="w-full p-3 outline-none bg-transparent"
+                >
+                  <option value="">Select Service</option>
+                  <option>Pipe Leakage Repair</option>
+                  <option>Bathroom Fitting</option>
+                  <option>Kitchen Fitting</option>
+                  <option>Tank Cleaning</option>
+                  <option>Tap Installation</option>
+                </select>
+              </div>
+              {errors.service && (
+                <p className="text-red-500 text-sm mt-1">{errors.service}</p>
+              )}
             </div>
-            {errors.service && (
-              <p className="text-red-500 text-sm mt-1">{errors.service}</p>
-            )}
-          </div>
 
-          {/* Location */}
-          <div>
-            <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
-              <FaMapMarkerAlt className="text-gray-400 mr-3" />
-              <input
-                type="text"
-                name="location"
-                placeholder="Your Location"
-                onChange={handleChange}
-                className="w-full p-3 outline-none"
-              />
+            {/* Location */}
+            <div>
+              <div className="flex items-center border rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-400">
+                <FaMapMarkerAlt className="text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  name="location"
+                  placeholder="Your Location"
+                  onChange={handleChange}
+                  className="w-full p-3 outline-none"
+                />
+              </div>
+              {errors.location && (
+                <p className="text-red-500 text-sm mt-1">{errors.location}</p>
+              )}
             </div>
-            {errors.location && (
-              <p className="text-red-500 text-sm mt-1">{errors.location}</p>
-            )}
-          </div>
 
-          {/* Button */}
-          <button
-            onClick={sendWhatsApp}
-            disabled={loading}
-            className={`w-full flex items-center justify-center gap-2 font-semibold py-3 rounded-lg shadow-md transition duration-300
+            {/* Button */}
+            <button
+              onClick={sendWhatsApp}
+              disabled={loading}
+              className={`w-full flex items-center justify-center gap-2 font-semibold py-3 rounded-lg shadow-md transition duration-300
             ${
               loading
                 ? "bg-gray-400 cursor-not-allowed"
                 : "bg-green-500 hover:bg-green-600 text-white"
             }`}
-          >
-            {loading ? (
-              "Opening WhatsApp..."
-            ) : (
-              <>
-                <FaWhatsapp size={20} />
-                Book via WhatsApp
-              </>
-            )}
-          </button>
+            >
+              {loading ? (
+                "Opening WhatsApp..."
+              ) : (
+                <>
+                  <FaWhatsapp size={20} />
+                  Book via WhatsApp
+                </>
+              )}
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

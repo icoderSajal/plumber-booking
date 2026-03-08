@@ -44,7 +44,6 @@ const plumbers = [
     mobile: "8057187801",
     experience: "6 Years Experience",
   },
-
   {
     name: "Shiva",
     image: "/plumber.png",
@@ -144,4 +143,4 @@ const OurPlumbers = () => {
   );
 };
 
-export default OurPlumbers;
+export default OurPlumbers;  
