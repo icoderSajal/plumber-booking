@@ -22,7 +22,13 @@ const plumbers = [
   },
 
   {
-    name: "Umesh Kumar Sharma",
+    name: "PreamPal Kalibari",
+    image: "/plumber.png",
+    mobile: "9675162847",
+    experience: "20 Years Experience",
+  },
+  {
+    name: "Umesh Sharma",
     image: "/plumber01.png",
     mobile: "9105639092",
     experience: "8 Years Experience",
@@ -40,7 +46,7 @@ const plumbers = [
     experience: "10 Years Experience",
   },
   {
-    name: "Mahesh Kumar Sharma",
+    name: "Mahesh Sharma",
     image: "/plumber.png",
     mobile: "9568264509",
     experience: "5 Years Experience",
@@ -92,6 +98,12 @@ const plumbers = [
     image: "/plumber.png",
     mobile: "7895771955",
     experience: "16 Years Experience",
+  },
+  {
+    name: "PreamPal Kalibari",
+    image: "/plumber.png",
+    mobile: "9675162847",
+    experience: "20 Years Experience",
   },
 ];
 
