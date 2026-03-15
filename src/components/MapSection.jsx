@@ -1,9 +1,9 @@
 const MapSection = () => {
   return (
-    <section className="py-16 text-center bg-gray-300">
+    <section className="py-10 text-center bg-gray-300">
       <h2 className="text-3xl font-bold mb-8">Our Service Area</h2>
 
-      <div className="max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg">
+      <div className="max-w-8xl mx-auto rounded-lg overflow-hidden shadow-lg">
         <iframe
           title="location"
           src="https://www.google.com/maps?q=Bareiily&output=embed"
