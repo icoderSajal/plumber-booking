@@ -4,7 +4,7 @@ import { CheckCircle, Phone } from "lucide-react";
 const plumbers = [
   {
     name: "BheemSen",
-    image: "/plumber.jpeg",
+    image: "/bheemsenplumber.jpeg",
     mobile: "9758112542",
     experience: "20 Years Experience",
   },
@@ -16,7 +16,7 @@ const plumbers = [
   },
   {
     name: "Ajay Singh",
-    image: "/plumber.jpeg",
+    image: "/ajayplumber.jpeg",
     mobile: "8754412356",
     experience: "15 Years Experience",
   },
