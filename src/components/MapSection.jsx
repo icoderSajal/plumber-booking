@@ -16,7 +16,8 @@ const MapSection = () => {
 
       <p className="mt-4 text-gray-600">
         We provide plumbing services across Bareiily and nearby locations.
-        &copy; {new Date().getFullYear()} Abiyaan Sanitary. All rights reserved.
+        &copy; {new Date().getFullYear()} Abhiyaan Sanitary. All rights
+        reserved.
       </p>
     </section>
   );
