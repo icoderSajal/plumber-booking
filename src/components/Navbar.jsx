@@ -112,6 +112,9 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { MdContactPhone } from "react-icons/md";
+
+import { TbBrandBooking } from "react-icons/tb";
 import {
   FaHome,
   FaInfoCircle,
@@ -119,6 +122,7 @@ import {
   FaTools,
   FaWhatsapp,
 } from "react-icons/fa";
+
 import { GrTools } from "react-icons/gr";
 
 const Navbar = () => {
@@ -130,149 +134,165 @@ const Navbar = () => {
   const activeLink = "text-white font-semibold border-b-2 border-white/80 pb-1";
 
   return (
-    <nav className="bg-gradient-to-r from-blue-900 via-blue-500 to-sky-500 backdrop-blur shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link
-          to="/"
-          className="flex items-center gap-3"
-          onClick={() => setMenuOpen(false)}
-        >
-          <img
-            src="/logo.png"
-            alt="Abhiyaan Sanitary"
-            className="h-11 w-auto"
-            style={{ borderRadius: "50%" }}
-          />
-          <span className="text-lg font-bold text-white hidden sm:block">
-            Abhiyaan Sanitary
-          </span>
-        </Link>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8 font-medium">
-          <NavLink
+    <>
+      <nav className="bg-gradient-to-r from-blue-900 via-blue-500 to-sky-500 backdrop-blur shadow-lg sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+          {/* Logo */}
+          <Link
             to="/"
-            className={({ isActive }) =>
-              `${baseLink} ${isActive ? activeLink : ""}`
-            }
+            className="flex items-center gap-3"
+            onClick={() => setMenuOpen(false)}
           >
-            <FaHome size={14} /> Home
-          </NavLink>
+            <img
+              src="/logo.png"
+              alt="Abhiyaan Sanitary"
+              className="h-11 w-auto"
+              style={{ borderRadius: "50%" }}
+            />
+            <span className="text-lg font-bold text-white hidden sm:block">
+              Abhiyaan Sanitary
+            </span>
+          </Link>
 
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `${baseLink} ${isActive ? activeLink : ""}`
-            }
-          >
-            <FaInfoCircle size={14} /> About
-          </NavLink>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-8 font-medium">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `${baseLink} ${isActive ? activeLink : ""}`
+              }
+            >
+              <FaHome size={14} /> Home
+            </NavLink>
 
-          <NavLink
-            to="/service"
-            className={({ isActive }) =>
-              `${baseLink} ${isActive ? activeLink : ""}`
-            }
-          >
-            <FaTools size={14} /> Services
-          </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `${baseLink} ${isActive ? activeLink : ""}`
+              }
+            >
+              <FaInfoCircle size={14} /> About
+            </NavLink>
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `${baseLink} ${isActive ? activeLink : ""}`
-            }
+            <NavLink
+              to="/service"
+              className={({ isActive }) =>
+                `${baseLink} ${isActive ? activeLink : ""}`
+              }
+            >
+              <FaTools size={14} /> Services
+            </NavLink>
+
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `${baseLink} ${isActive ? activeLink : ""}`
+              }
+            >
+              <MdContactPhone size={14} /> Contact
+            </NavLink>
+            <NavLink
+              to="/book-plumber"
+              className={({ isActive }) =>
+                `${baseLink} ${isActive ? activeLink : ""}`
+              }
+            >
+              <TbBrandBooking size={16} />
+              Book Plumber
+            </NavLink>
+            <NavLink
+              href="tel:9205448629"
+              className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg"
+            >
+              <FaPhoneAlt />
+              Call Now
+            </NavLink>
+          </div>
+
+          {/* Mobile Button */}
+          <button
+            className="md:hidden text-2xl text-white"
+            onClick={() => setMenuOpen(true)}
           >
-            <FaPhoneAlt size={14} /> Contact
-          </NavLink>
-          <NavLink
-            to="/whatappbooking"
-            className={({ isActive }) =>
-              `${baseLink} ${isActive ? activeLink : ""}`
-            }
-          >
-            <FaWhatsapp size={20} /> Whatsapp Booking
-          </NavLink>
+            <GiHamburgerMenu />
+          </button>
         </div>
 
-        {/* Mobile Button */}
-        <button
-          className="md:hidden text-2xl text-white"
-          onClick={() => setMenuOpen(true)}
-        >
-          <GiHamburgerMenu />
-        </button>
-      </div>
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="md:hidden fixed inset-0 bg-black/40 backdrop-blur-sm">
+            <div className="bg-white w-full p-6 animate-slideDown">
+              {/* Header */}
+              <div className="flex items-center justify-between">
+                <span className="text-lg font-bold text-blue-600">Menu</span>
+                <button
+                  className="text-2xl text-gray-700"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <AiOutlineClose />
+                </button>
+              </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden fixed inset-0 bg-black/40 backdrop-blur-sm">
-          <div className="bg-white w-full p-6 animate-slideDown">
-            {/* Header */}
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-bold text-blue-600">Menu</span>
-              <button
-                className="text-2xl text-gray-700"
-                onClick={() => setMenuOpen(false)}
-              >
-                <AiOutlineClose />
-              </button>
-            </div>
+              {/* Links */}
+              <div className="flex flex-col gap-6 mt-8 text-gray-800 font-medium text-lg">
+                <Link
+                  to="/"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 hover:text-blue-600 transition"
+                >
+                  <FaHome /> Home
+                </Link>
 
-            {/* Links */}
-            <div className="flex flex-col gap-6 mt-8 text-gray-800 font-medium text-lg">
-              <Link
-                to="/"
-                onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 hover:text-blue-600 transition"
-              >
-                <FaHome /> Home
-              </Link>
+                <Link
+                  to="/about"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 hover:text-blue-600 transition"
+                >
+                  <FaInfoCircle /> About Us
+                </Link>
 
-              <Link
-                to="/about"
-                onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 hover:text-blue-600 transition"
-              >
-                <FaInfoCircle /> About Us
-              </Link>
+                <Link
+                  to="/book-plumber"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 hover:text-blue-600 transition"
+                >
+                  <FaTools /> Book Plumber
+                </Link>
 
-              <Link
-                to="/book-plumber"
-                onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 hover:text-blue-600 transition"
-              >
-                <FaTools /> Book Plumber
-              </Link>
+                <Link
+                  to="/whatappbooking"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 hover:text-blue-600 transition"
+                >
+                  <FaWhatsapp /> Whatsapp Booking
+                </Link>
+                <Link
+                  to="/service"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 hover:text-blue-600 transition"
+                >
+                  <GrTools /> Services
+                </Link>
 
-              <Link
-                to="/whatappbooking"
-                onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 hover:text-blue-600 transition"
-              >
-                <FaWhatsapp /> Whatsapp Booking
-              </Link>
-              <Link
-                to="/service"
-                onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 hover:text-blue-600 transition"
-              >
-                <GrTools /> Services
-              </Link>
-
-              <Link
-                to="/contact"
-                onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 hover:text-blue-600 transition"
-              >
-                <FaPhoneAlt /> Contact
-              </Link>
+                <Link
+                  to="/contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 hover:text-blue-600 transition"
+                >
+                  <MdContactPhone /> Contact
+                </Link>
+                <a
+                  href="tel:9205448629"
+                  className="flex items-center gap-2 text-center bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+                >
+                  <FaPhoneAlt /> Call Now
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </nav>
+        )}
+      </nav>
+    </>
   );
 };
 
