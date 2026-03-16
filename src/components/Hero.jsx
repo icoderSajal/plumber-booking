@@ -140,8 +140,13 @@
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const services = [
     {
       name: "Tap Repair",
@@ -170,89 +175,85 @@ const Hero = () => {
   ];
 
   return (
-    <>
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Heading */}
-          <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Abhiyaan Sanitary & Plumber Service
-            </h1>
+    <section id="services" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Abhiyaan Sanitary & Plumber Service
+          </h1>
 
-            <p className="text-lg text-gray-600">
-              Trusted Plumbing Services in Bareilly & Nearby Areas
-            </p>
-          </div>
+          <p className="text-lg text-gray-600">
+            Trusted Plumbing Services in Bareilly & Nearby Areas
+          </p>
+        </div>
 
-          {/* Services Title */}
-          {/* <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-          Our Services
-        </h2> */}
+        {/* Services */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.05 }}
+              className="relative group overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            >
+              <img
+                src={service.image}
+                alt={service.name}
+                className="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
+              />
 
-          {/* Service Cards */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                className="relative group overflow-hidden rounded-xl shadow-lg cursor-pointer"
-              >
-                <img
-                  src={service.image}
-                  alt={service.name}
-                  className="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
-                />
+              <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center opacity-0 group-hover:opacity-100 transition duration-500 px-4">
+                <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
 
-                <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center opacity-0 group-hover:opacity-100 transition duration-500 px-4">
-                  <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
-                  <p className="text-sm">{service.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Buttons at Bottom */}
-
-          <div className="max-w-6xl mx-auto text-center px-6 mt-10">
-            <h2 className="text-3xl font-bold mb-12">How It Works</h2>
-
-            <div className="grid md:grid-cols-3 gap-10">
-              <div>
-                <h3 className="font-bold text-xl mb-2">1. Book Service</h3>
-                <p>Fill the booking form or contact on WhatsApp.</p>
+                <p className="text-sm">{service.desc}</p>
               </div>
+            </motion.div>
+          ))}
+        </div>
 
-              <div>
-                <h3 className="font-bold text-xl mb-2">
-                  2. Technician Assigned
-                </h3>
-                <p>Our plumber will contact you quickly.</p>
-              </div>
+        {/* How It Works */}
+        <div className="max-w-6xl mx-auto text-center px-6 mt-16">
+          <h2 className="text-3xl font-bold mb-12">How It Works</h2>
 
-              <div>
-                <h3 className="font-bold text-xl mb-2">3. Problem Fixed</h3>
-                <p>Fast and professional plumbing service.</p>
-              </div>
+          <div className="grid md:grid-cols-3 gap-10">
+            <div>
+              <h3 className="font-bold text-xl mb-2">1. Book Service</h3>
+              <p>Fill the booking form or contact on WhatsApp.</p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-xl mb-2">2. Technician Assigned</h3>
+              <p>Our plumber will contact you quickly.</p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-xl mb-2">3. Problem Fixed</h3>
+              <p>Fast and professional plumbing service.</p>
             </div>
           </div>
-          <div className="flex justify-center gap-4 flex-wrap mt-12">
-            <Link
-              to="/book-plumber"
-              className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
-            >
-              <FaPhoneAlt /> Book Plumber
-            </Link>
-
-            <a
-              href="https://wa.me/919205448629"
-              className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600 transition"
-            >
-              <FaWhatsapp /> WhatsApp
-            </a>
-          </div>
         </div>
-      </section>
-    </>
+
+        {/* Buttons */}
+        <div className="flex justify-center gap-4 flex-wrap mt-12">
+          <Link
+            to="/book-plumber"
+            onClick={() => window.scrollTo(0, 0)}
+            className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            <FaPhoneAlt />
+            Book Plumber
+          </Link>
+
+          <a
+            href="https://wa.me/919205448629"
+            className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600 transition"
+          >
+            <FaWhatsapp />
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
 
