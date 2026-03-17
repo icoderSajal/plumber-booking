@@ -200,13 +200,13 @@ const Navbar = () => {
               <TbBrandBooking size={16} />
               Book Plumber
             </NavLink>
-            <NavLink
+            <a
               href="tel:9205448629"
               className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg"
             >
               <FaPhoneAlt />
               Call Now
-            </NavLink>
+            </a>
           </div>
 
           {/* Mobile Button */}
