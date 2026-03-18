@@ -57,9 +57,15 @@ const AboutUs = () => {
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
                 About Our Shop
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p>
                 <strong>Abhiyaan Sanitary and Plumber Service</strong> is a
-                newly established shop led by <strong>Sajal Bajaj</strong>,
+                trusted plumbing service provider in Bareilly. We serve Durga
+                Nagar and nearby areas with fast, affordable, and reliable
+                solutions. If you are searching for a plumber near you, we are
+                ready to help.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                is a newly established shop led by <strong>Sajal Bajaj</strong>,
                 built on years of hands-on experience in sanitary and plumbing
                 work.
               </p>

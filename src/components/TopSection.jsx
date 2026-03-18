@@ -148,11 +148,16 @@ export default function TopSection() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 items-center gap-12">
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-            Fast & Reliable
-            <span className="text-blue-600"> Plumbing Service</span>
+          <h1 className="text-3xl font-bold">
+            Best Plumber in Bareilly – Tap Repair, Pipe Fitting & Bathroom
+            Services
           </h1>
 
+          <p className="mt-2">
+            Looking for a reliable plumber in Bareilly near Durga Nagar? We
+            provide fast and affordable plumbing services including tap repair,
+            leakage fixing, and bathroom fittings.
+          </p>
           <p className="mt-6 text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
             Complete solution for all your sanitary needs. We deal in PVC, CPVC
             & UPVC pipes and fittings including elbows, sockets, P-traps,
@@ -173,7 +178,6 @@ export default function TopSection() {
               <FaPhoneAlt /> Call Now
             </a>
 
-            
             <Link
               to="/whatappbooking"
               className="flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition font-medium"
