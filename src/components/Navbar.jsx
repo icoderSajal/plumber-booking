@@ -112,7 +112,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-// import { MdContactPhone } from "react-icons/md";
+import { MdContactPhone } from "react-icons/md";
 
 import { TbBrandBooking } from "react-icons/tb";
 import {
@@ -189,7 +189,7 @@ const Navbar = () => {
                 `${baseLink} ${isActive ? activeLink : ""}`
               }
             >
-              {/* <MdContactPhone size={14} /> Contact */}
+              <MdContactPhone size={14} /> Contact
             </NavLink>
             <NavLink
               to="/book-plumber"
