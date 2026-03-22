@@ -900,7 +900,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "99",
     name: "American Jet Spray With 1 Meter Flexible Tube",
-    price: "350",
+    price: "450",
     image: "/images/amjet.jpg",
     category: "toilet",
     brand: "Intactware",
