@@ -500,7 +500,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "55",
     name: "Short Body Brass",
-    price: 699,
+    price: 499,
     image: "/images/shortbody.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
