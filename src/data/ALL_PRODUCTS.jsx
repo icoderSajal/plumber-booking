@@ -783,7 +783,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "86",
     name: "Toilet Seat Cover Set",
-    price: "1050",
+    price: "400",
     image: "/images/seatcover.jpg",
     category: "toilet",
     brand: "ZOTO",
