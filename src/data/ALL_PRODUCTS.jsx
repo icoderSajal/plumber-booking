@@ -882,7 +882,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "97",
     name: "Cistern Short Bend",
-    price: "200",
+    price: "60",
     image: "/images/shortbend.jpg",
     category: "accessories",
     brand: "plasto",
@@ -891,7 +891,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "98",
     name: "Cistern Long Bend",
-    price: "450",
+    price: "80",
     image: "/images/longbend.jpg",
     category: "accessories",
     brand: "plasto",
