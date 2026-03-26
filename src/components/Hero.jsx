@@ -191,6 +191,23 @@ const Hero = () => {
         {/* Services */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
+            // <motion.div
+            //   key={index}
+            //   whileHover={{ scale: 1.05 }}
+            //   className="relative group overflow-hidden rounded-xl shadow-lg cursor-pointer"
+            // >
+            //   <img
+            //     src={service.image}
+            //     alt={service.name}
+            //     className="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
+            //   />
+
+            //   <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center opacity-0 group-hover:opacity-100 transition duration-500 px-4">
+            //     <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
+
+            //     <p className="text-sm">{service.desc}</p>
+            //   </div>
+            // </motion.div>
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
@@ -202,9 +219,14 @@ const Hero = () => {
                 className="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
               />
 
-              <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center opacity-0 group-hover:opacity-100 transition duration-500 px-4">
+              <div
+                className="
+      absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center px-4
+      opacity-100 md:opacity-0 md:group-hover:opacity-100
+      transition duration-500
+    "
+              >
                 <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
-
                 <p className="text-sm">{service.desc}</p>
               </div>
             </motion.div>

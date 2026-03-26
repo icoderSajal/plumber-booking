@@ -157,8 +157,8 @@ export const ALL_PRODUCTS = [
   },
   {
     _id: "18",
-    name: "CPVC Elbow 3/4 Inch",
-    price: 35,
+    name: "CPVC Elbow 1 Inch",
+    price: 30,
     image: "/images/elbow.jpg",
     category: "cpvc",
     brand: "Birla",
@@ -167,7 +167,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "19",
     name: "CPVC Tee 3/4 Inch",
-    price: 45,
+    price: 25,
     image: "/images/teecpvc.jpg",
     category: "cpvc",
     brand: "Birla",
@@ -295,7 +295,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "33",
     name: "UPVC Tank Nipple 3/4 Inch",
-    price: 70,
+    price: 60,
     image: "/images/upvctanknipple.jpg",
     category: "upvc",
     brand: "Birla",
@@ -1123,6 +1123,34 @@ export const ALL_PRODUCTS = [
     image: "/images/nozeltab.jpg",
     category: "bathroom-taps",
     brand: "Vikson",
+    offer: "0 %",
+  },
+  {
+    _id: "124",
+    name: "CPVC Elbow 3/4 Inch",
+    price: 18,
+    image: "/images/elbow.jpg",
+    category: "cpvc",
+    brand: "Birla",
+    offer: "0 %",
+  },
+  {
+    _id: "125",
+    name: "CPVC Tee 1 Inch",
+    price: 35,
+    image: "/images/teecpvc.jpg",
+    category: "cpvc",
+    brand: "Birla",
+    offer: "0 %",
+  },
+  {
+    _id: "126",
+    name: "UPVC EndCap 3/4 inch",
+    price: 15,
+    image:
+      "  https://m.media-amazon.com/images/I/41TjP4n06CL._AC_UY327_FMwebp_QL65_.jpg",
+    category: "upvc",
+    brand: "Birla",
     offer: "0 %",
   },
 ];
