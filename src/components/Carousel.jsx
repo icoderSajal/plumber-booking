@@ -32,7 +32,7 @@ const ceramicProducts = [
     id: 5,
     name: "Bathroom Tap",
     image: "/images/bath1.jpg",
-    price: "₹1,200",
+    price: "₹650",
   },
   {
     id: 6,
