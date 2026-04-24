@@ -250,7 +250,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "28",
     name: "UPVC Pipe 3/4 Inch",
-    price: 160,
+    price: 210,
     image: "/images/upvcpipe.jpg",
     category: "upvc",
     brand: "Birla",
