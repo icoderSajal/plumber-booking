@@ -539,7 +539,7 @@ export const ALL_PRODUCTS = [
   {
     _id: "59",
     name: "PVC Water Tank 750 L",
-    price: 3800,
+    price: 4500,
     image: "/images/tank.jpg",
     category: "pvc-tanks",
     brand: "Aplapollo NEO",
