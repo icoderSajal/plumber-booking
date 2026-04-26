@@ -95,12 +95,12 @@ import MapSection from "./MapSection";
 
 const Footer = () => {
   const hours = [
-    { id: 1, day: "Monday", time: "9:00 AM - 9:00 PM" },
-    { id: 2, day: "Tuesday", time: "9:00 AM - 9:00 PM" },
-    { id: 3, day: "Wednesday", time: "9:00 AM - 9:00 PM" },
-    { id: 4, day: "Thursday", time: "9:00 AM - 9:00 PM" },
-    { id: 5, day: "Friday", time: "9:00 AM - 9:00 PM" },
-    { id: 6, day: "Saturday", time: "9:00 AM - 9:00 PM" },
+    { id: 1, day: "Monday", time: "8:00 AM - 8:00 PM" },
+    { id: 2, day: "Tuesday", time: "8:00 AM - 8:00 PM" },
+    { id: 3, day: "Wednesday", time: "8:00 AM - 8:00 PM" },
+    { id: 4, day: "Thursday", time: "8:00 AM - 8:00 PM" },
+    { id: 5, day: "Friday", time: "8:00 AM - 8:00 PM" },
+    { id: 6, day: "Saturday", time: "8:00 AM - 8:00 PM" },
   ];
 
   return (
