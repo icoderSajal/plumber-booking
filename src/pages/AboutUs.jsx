@@ -65,9 +65,7 @@ const AboutUs = () => {
                 ready to help.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                is a newly established shop led by <strong>Sajal Bajaj</strong>,
-                built on years of hands-on experience in sanitary and plumbing
-                work.
+                It is a newly established shop led by Sajal Bajaj, built on years of hands-on experience in sanitary and plumbing work.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 We specialize in PVC and CPVC pipes, ceramic sanitary items,
