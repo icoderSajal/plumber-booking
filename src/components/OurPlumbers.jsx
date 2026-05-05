@@ -26,19 +26,20 @@ const plumbers = [
     mobile: "8754412356",
     experience: "15 Years Experience",
   },
+  {
+    name: "Brijesh Kumar",
+    image: "/ajayplumber.jpeg",
+    mobile: "8754412356",
+    experience: "15 Years Experience",
+  },
 
   {
     name: "PreamPal Kalibari",
     image: "/plumber.png",
-    mobile: "9675162847",
-    experience: "20 Years Experience",
+    mobile: "9997291482",
+    experience: "18 Years Experience",
   },
-  {
-    name: "Umesh Sharma",
-    image: "/plumber01.png",
-    mobile: "9105639092",
-    experience: "8 Years Experience",
-  },
+  
   {
     name: "Puran Morya",
     image: "/plumber04.jpeg",
