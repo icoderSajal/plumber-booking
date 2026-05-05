@@ -28,7 +28,7 @@ const plumbers = [
   },
   {
     name: "Brijesh Kumar",
-    image: "/ajayplumber.jpeg",
+    image: "/plumber.png",
     mobile: "8754412356",
     experience: "15 Years Experience",
   },
