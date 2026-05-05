@@ -1153,6 +1153,24 @@ export const ALL_PRODUCTS = [
     brand: "Birla",
     offer: "0 %",
   },
+  {
+    _id: "127",
+    name: "PVC Tee 3 Inch",
+    price: 90,
+    image: "/images/teepvc.png",
+    category: "pvc",
+    brand: "APOLLO",
+    offer: "0 %",
+  },
+  {
+    _id: "128",
+    name: "PVC Tee 2 Inch",
+    price: 45,
+    image: "/images/teepvc.png",
+    category: "pvc",
+    brand: "APOLLO",
+    offer: "0 %",
+  },
 ];
 
 // Best PVC & CPVC pipes at best price in bareilly

@@ -9,6 +9,12 @@ const plumbers = [
     experience: "20 Years Experience",
   },
   {
+    name: "Rajeev",
+    image: "/plumber.png",
+    mobile: "9719499825",
+    experience: "20 Years Experience",
+  },
+  {
     name: "Dharajeet Singh",
     image: "/plumber02.jpeg",
     mobile: "8754412356",

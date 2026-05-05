@@ -15,6 +15,7 @@ const Home = () => {
     <>
       <Navbar />
       <CategoryBar />
+
       <TopSection />
       <Carousel />
       <Hero />
