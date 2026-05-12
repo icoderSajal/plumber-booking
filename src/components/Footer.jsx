@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-import { FaLocationArrow, FaPhone } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLocationArrow,
+  FaPhone,
+  FaWhatsapp,
+} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Logo from "../assets/logo.png";
 import MapSection from "./MapSection";
@@ -27,6 +33,17 @@ const Footer = () => {
           <p className="text-gray-300 text-sm">
             Abiyaan Sanitary - Quality plumbing solutions at your doorstep.
           </p>
+          <div className="flex  space-y-2 space-x-2.5 mt-5">
+            <Link to="https://www.facebook.com/people/Abhiyaan-Sanitary-And-Plumber-Service/61577543477872/">
+              <FaFacebook size={28} />
+            </Link>
+            <Link to="https://www.instagram.com/abhiyaansanitary/">
+              <FaInstagram size={28} />
+            </Link>
+            <a href="https://wa.me/919205448629">
+              <FaWhatsapp size={28} />
+            </a>
+          </div>
         </div>
 
         {/* Quick Links */}
