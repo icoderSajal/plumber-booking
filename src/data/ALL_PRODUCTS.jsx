@@ -1171,6 +1171,15 @@ export const ALL_PRODUCTS = [
     brand: "APOLLO",
     offer: "0 %",
   },
+  {
+    _id: "129",
+    name: "PVC Water Tank 500 L",
+    price: 2600,
+    image: "/images/platina1.jpeg",
+    category: "pvc-tanks",
+    brand: "Platina",
+    offer: "0 %",
+  },
 ];
 
 // Best PVC & CPVC pipes at best price in bareilly
