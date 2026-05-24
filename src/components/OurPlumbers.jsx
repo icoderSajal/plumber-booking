@@ -77,7 +77,7 @@ const plumbers = [
     experience: "6 Years Experience",
   },
   {
-    name: "Shiva",
+    name: "Shivnandan",
     image: "/plumber.png",
     mobile: "9696248883",
     experience: "4 Years Experience",
